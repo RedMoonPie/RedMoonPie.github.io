@@ -29,7 +29,7 @@ body{
 .Grid_Layout {
     display: grid;
     grid-template-columns: repeat(11, 7rem);
-    grid-template-rows: repeat(12, 7rem);
+    grid-template-rows: repeat(18, 7rem);
    
     
   }
@@ -41,6 +41,7 @@ body{
   grid-row-start: 1;
   grid-row-end: 3;
   padding-top: 2rem;
+  transition: .5s;
   z-index: 1;
 }
 .Text_Hello{
@@ -106,9 +107,44 @@ ul li {
   grid-column-end: 13;
   grid-row-start: 1;
   grid-row-end: 7;
-  background: url(/assets/img/Photo_with_mask.png);
+  background: url(/assets/img/Home_photo_5.png);
+  background-attachment: fixed;
+  background-size: content;
+  background-position: -11px;
   position: relative;
+  
+  
 }
 .Myphoto_welcome img {
   object-fit: contain;
+}
+
+.Menu_photo{
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 7;
+  grid-row-end: 13;
+  background: url(/assets/img/treemenuy.png);
+  background-attachment: fixed;
+  position: relative;
+}
+.Menu{
+  font-family: less-font-light;
+  grid-column-start: 7;
+  grid-column-end: 13;
+  grid-row-start: 9;
+  grid-row-end: 13 ;
+}
+.Menu li{
+  padding: 2.5rem 0 0 0;
+}
+.M_el1{
+  font-size: 2rem;
+  margin-left: 5rem;
+  margin-bottom: 2rem;
+}
+.M_el2{
+  font-size: 1.5rem;
+  margin-left: 6rem;
 }
