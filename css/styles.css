@@ -28,8 +28,8 @@ body{
 }
 .Grid_Layout {
     display: grid;
-    grid-template-columns: repeat(11, 7rem);
-    grid-template-rows: repeat(18, 7rem);
+    grid-template-columns: repeat(11, 7fr);
+    grid-template-rows: repeat(18, 7fr);
    
     
   }
