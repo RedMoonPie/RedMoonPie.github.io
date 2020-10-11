@@ -29,7 +29,7 @@ body{
 .Grid_Layout {
     display: grid;
     grid-template-columns: repeat(11, 7rem);
-    grid-template-rows: repeat(18, 7rem);
+    grid-template-rows: repeat(21, 7rem);
    
     
   }
@@ -81,7 +81,7 @@ body{
   grid-column-start: 2;
   grid-column-end: 7;
   grid-row-start: 3;
-  grid-row-end: 7;
+  grid-row-end: 8;
   
 }
 ul li {
@@ -106,7 +106,7 @@ ul li {
   grid-column-start: 7;
   grid-column-end: 13;
   grid-row-start: 1;
-  grid-row-end: 7;
+  grid-row-end: 8;
   background: url(/assets/img/Home_photo_5.png);
   background-attachment: fixed;
   background-size: content;
@@ -123,8 +123,8 @@ ul li {
   display: flex;
   grid-column-start: 1;
   grid-column-end: 7;
-  grid-row-start: 7;
-  grid-row-end: 13;
+  grid-row-start: 8;
+  grid-row-end: 15;
   background: url(/assets/img/treemenuy.png);
   background-attachment: fixed;
   position: relative;
@@ -133,8 +133,8 @@ ul li {
   font-family: less-font-light;
   grid-column-start: 7;
   grid-column-end: 13;
-  grid-row-start: 9;
-  grid-row-end: 13 ;
+  grid-row-start: 10;
+  grid-row-end: 15 ;
 }
 .Menu li{
   padding: 2.5rem 0 0 0;
@@ -147,4 +147,11 @@ ul li {
 .M_el2{
   font-size: 1.5rem;
   margin-left: 6rem;
+}
+.carousel{
+  display: block;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 15;
+  grid-row-end: 20 ;
 }
