@@ -16,8 +16,9 @@
     var i = -48;
     var ct = 1
       
-
+    elements[0].classList.add('slide1');
     elements[1].classList.add('slide2');
+    elements[indexb].style.top = 16+"px";
     elements[2].classList.add('slide3')
 
     
@@ -35,16 +36,21 @@
         elements.forEach(element => element.classList.add('animation'))
         
         if(direction == 1){
+            elements[indexa].classList.remove('slide1');
            
             elements[indexa].style.left = ct*((i - posInitiala-slideSize) ) + "px"
             indexa++
+            elements[indexa].classList.add('slide1');
+
             elements[indexa].classList.remove('slide2');
+            elements[indexb].style.top = 0+"px";
             elements[indexa].style.left = ct*( i - posInitialb) + "px"
             
 
             indexb++
             elements[indexb].style.left = ct*( i - posInitialb)-48 + "px"
             elements[indexb].classList.add('slide2');
+            elements[indexb].style.top = 16+"px";
 
             indexc++
             elements[indexb].classList.remove('slide3');

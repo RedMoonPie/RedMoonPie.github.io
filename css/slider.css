@@ -6,6 +6,7 @@
     height: 20rem;
     width: 15rem;
     position: relative;
+    
 }
 .elements{
     height: 100%;
@@ -13,39 +14,13 @@
     object-fit: fill;
 }
 
-/* Animation code*/
-@keyframes lef{
-    from{
-        left: calc(-5%);
-        top: 1rem;
-    }
-    to {
-        left: -15.2rem;
-        top: 0rem;
-        z-index: 0;
-        
-    }
+@keyframes background-animation {
+    from {background-color: inherit;}
+    to {background-color: rgba(0,0,0,.6);}
 }
-@keyframes mid{
-    from{
-        left: calc(-15%);
-        top: 0rem;
-        background-color: rgba(0,0,0,0.7);
-    }
-    to {
-        left: calc(-25%);
-        top: 1rem;
-        z-index: 1;
-        
-    }
-}
-@keyframes rig{
-    from{
-        left: 0rem;
-    }
-    to {
-        left: 18.5rem;
-    }
+@keyframes background-animation2 {
+    from {background-color: rgba(0,0,0,.6);}
+    to {background-color: rgba(255, 255, 255, 0);}
 }
 
 .slide-right {
@@ -62,19 +37,53 @@
 }
 
 .slide1{
-  
+    transition: all 1s ;
     
 }
-.slide2{
-   
-   z-index: 3;
-   left: -48px;
+.slide1::before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    animation-name: background-animation;
+    animation-duration: 2s;
 }
-
+.slide2{
+   left: -48px;
+   z-index: 3;
+}
+.slide2:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    background-color: rgba(0,0,0,0);
+    animation-name: background-animation2;
+    animation-duration: 2s;
+}
 
 .slide3{
     left: -96px;
+   
+
 }
+.slide3:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    background-color: rgba(0,0,0,0.6);
+    animation-name: background-animation;
+    animation-duration: 2s;
+}
+
 
 .carousel{
     display: flex;
@@ -92,7 +101,10 @@
     padding-left: 3rem;
     width: calc(var(--slide-width)*2);
     height: var(--slide-height);
-    
+    overflow: hidden;
     position: relative;
     
+  }
+  .animation{
+    transition: left 1s,top 1s;
   }
