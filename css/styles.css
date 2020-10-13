@@ -10,6 +10,12 @@
   font-family: less-font-light;
   src: url("/assets/fonts/Less\ Sans/Less-Light.otf") format("opentype");
 }
+.wrapper {
+  --slide-height:352px;
+  --slide-width:304px;
+}
+
+
 p{
   margin: 0px;
 
@@ -109,9 +115,9 @@ ul li {
   grid-row-end: 8;
   background: url(/assets/img/Home_photo_5.png);
   background-attachment: fixed;
-  background-size: content;
-  background-position: -11px;
+  background-position: calc(100%);
   position: relative;
+  background-size: auto;
   
   
 }
@@ -125,6 +131,7 @@ ul li {
   grid-column-end: 7;
   grid-row-start: 8;
   grid-row-end: 15;
+  background-position: calc(100%);
   background: url(/assets/img/treemenuy.png);
   background-attachment: fixed;
   position: relative;
@@ -148,10 +155,12 @@ ul li {
   font-size: 1.5rem;
   margin-left: 6rem;
 }
-.carousel{
-  display: block;
+.Third_page{
+
   grid-column-start: 1;
-  grid-column-end: 7;
+  grid-column-end: 13;
   grid-row-start: 15;
   grid-row-end: 20 ;
+  position: relative;
 }
+

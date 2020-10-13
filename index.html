@@ -6,6 +6,7 @@
     <title>Diego's Page</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" type="text/css" href="/css/glider.css">
+    <link rel="stylesheet" type="text/css" href="/css/slider.css">
 </head>
 <body>
     <div class="Grid_Layout">
@@ -41,21 +42,31 @@
             </ul>
         </div>
         <!--Third Page-->
-        <div id="intro" class="carousel">
-            <div class="glider">
-              <div>your content here</div>
-              <div>your content here</div>
-              <div>your content here</div>
-              <div>your content here</div>
+        <div class="Third_page">
+            <div class="wrapper">
+                <div class="carousel">
+                        <ul>
+                            <li class="ele_container"> <img class="elements" src="assets/img/Home_photo.png"></li>
+                            <li class="ele_container"> <img class="elements" src="assets/img/Home_photo.png"></li>
+                            <li class="ele_container"> <img class="elements" src="assets/img/Home_photo.png"></li>
+                            <li class="ele_container"> <img class="elements" src="assets/img/Home_photo.png"></li>
+                            <li class="ele_container"> <img class="elements" src="assets/img/Home_photo.png"></li>
+                            <li class="ele_container"> <img class="elements" src="assets/img/Home_photo.png"></li>
+                            <li class="ele_container"> <img class="elements" src="assets/img/Home_photo.png"></li>
+                        
+                        </ul>
+                </div>
             </div>
-            <button aria-label="Previous" class="glider-prev">«</button>
-            <button aria-label="Next" class="glider-next">»</button>
-            <div role="tablist" class="dots"></div>
+            <button onclick="changeSlide(-1)" class="left">left</button>
+            <button onclick="changeSlide(1)" class="right">right</button>
         </div>
     </div>
 
     
 </body>
 <script src="/js/Scroll.js"></script>
-<script src="/js/glider.js"></script>
 </html>
+
+
+
+

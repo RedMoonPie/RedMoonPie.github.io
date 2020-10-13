@@ -1,0 +1,98 @@
+.ele_container{
+    padding: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    height: 20rem;
+    width: 15rem;
+    position: relative;
+}
+.elements{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+/* Animation code*/
+@keyframes lef{
+    from{
+        left: calc(-5%);
+        top: 1rem;
+    }
+    to {
+        left: -15.2rem;
+        top: 0rem;
+        z-index: 0;
+        
+    }
+}
+@keyframes mid{
+    from{
+        left: calc(-15%);
+        top: 0rem;
+        background-color: rgba(0,0,0,0.7);
+    }
+    to {
+        left: calc(-25%);
+        top: 1rem;
+        z-index: 1;
+        
+    }
+}
+@keyframes rig{
+    from{
+        left: 0rem;
+    }
+    to {
+        left: 18.5rem;
+    }
+}
+
+.slide-right {
+    transform: translateX(1rem);
+
+}
+.slide-left {
+    
+
+}
+.slide-mid {
+    
+
+}
+
+.slide1{
+  
+    
+}
+.slide2{
+   
+   z-index: 3;
+   left: -48px;
+}
+
+
+.slide3{
+    left: -96px;
+}
+
+.carousel{
+    display: flex;
+    position: relative;
+    width: 1000000000px;
+    
+  }
+  .carousel ul{
+    display: flex;
+    margin-block-end: 0;
+    margin-block-start: 0;
+  }
+  .wrapper{
+    padding-top: 13rem;
+    padding-left: 3rem;
+    width: calc(var(--slide-width)*2);
+    height: var(--slide-height);
+    
+    position: relative;
+    
+  }
