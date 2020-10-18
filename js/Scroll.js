@@ -14,14 +14,16 @@
     clonefirst = firstSlide.cloneNode(true),
     clonelast = lastSlide.cloneNode(true);
     var i = -48;
-    var ct = 1
+    var ctd = 1
+    var cti = 0
+    var acum = 0
       
     elements[0].classList.add('slide1');
     elements[1].classList.add('slide2');
     elements[indexb].style.top = 16+"px";
     elements[2].classList.add('slide3')
 
-    
+    console.log(slideSize);
     var posInitiala = elements[0].offsetLeft;
         console.log(posInitiala)
     var posInitialb = elements[1].offsetLeft;
@@ -36,41 +38,63 @@
         elements.forEach(element => element.classList.add('animation'))
         
         if(direction == 1){
+            
+
             elements[indexa].classList.remove('slide1');
-           
-            elements[indexa].style.left = ct*((i - posInitiala-slideSize) ) + "px"
+    
+            elements[indexa].style.left = (ctd*-slideSize) -48 + "px"
             indexa++
             elements[indexa].classList.add('slide1');
 
+
             elements[indexa].classList.remove('slide2');
-            elements[indexb].style.top = 0+"px";
-            elements[indexa].style.left = ct*( i - posInitialb) + "px"
-            
+            elements[indexa].style.top = 0+"px";
+            elements[indexa].style.left = (ctd*-slideSize) +"px"//(i *ctd)  + "px"
+            //48
 
             indexb++
-            elements[indexb].style.left = ct*( i - posInitialb)-48 + "px"
+            elements[indexb].style.left = (ctd*-slideSize) - 48+"px"//(i *ctd)+ "px"
             elements[indexb].classList.add('slide2');
             elements[indexb].style.top = 16+"px";
 
             indexc++
             elements[indexb].classList.remove('slide3');
-            elements[indexc].style.left = ct*(i - posInitialb)-96 + "px"
+            elements[indexc].style.left = (ctd*-slideSize) - 96+"px"//(i *ctd)  + "px"
             elements[indexc].classList.add('slide3');
-            ct++;
+            
+            
+            ctd++
+            cti++
+            console.log(`ctd+1  = ${ctd}`)
         }
-       /* if(direction == -1){
-            elements[indexa].classList.remove("slide1");
-            indexa--;
-            elements[indexa].classList.add("slide1");
-    
-            elements[indexb].classList.remove("slide2");
-            indexb--;
-            elements[indexb].classList.add("slide2");
+        if(direction == -1){
+            ctd--
+            cti--
+            
+            elements[indexa].style.left = (cti*-slideSize) - 48+ "px"
+            elements[indexa].style.top = 16+"px";
+            
+            
+            indexa--
+            elements[indexa].style.left = (cti*-slideSize)  + "px"
+           
 
-            elements[indexc].classList.remove("slide3");
-            indexc--;
-            elements[indexc].classList.add("slide3");
-
-        }*/
+            elements[indexb].style.top = 0+"px";
+            elements[indexb].style.left = (cti*-slideSize)-96 + "px"
+            indexb--
+           
+            
+            
+            elements[indexc].style.left = (cti*-slideSize) +96 + "px"
+            indexc--
+            
+            
+            
+            console.log(`ctd-1  = ${ctd}`)
+           
+            
+            
+           
+        }
         
     }

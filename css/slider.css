@@ -19,8 +19,13 @@
     to {background-color: rgba(0,0,0,.6);}
 }
 @keyframes background-animation2 {
-    from {background-color: rgba(0,0,0,.6);}
+    from {background-color: rgba(0,0,0,.6);
+     }
     to {background-color: rgba(255, 255, 255, 0);}
+}
+@keyframes background-animation3 {
+    from {background-color: inherit; top: 0rem;}
+    to {background-color: rgba(0,0,0,.6);top:1rem}
 }
 
 .slide-right {
@@ -38,6 +43,7 @@
 
 .slide1{
     transition: all 1s ;
+    
     
 }
 .slide1::before {
@@ -101,7 +107,7 @@
     padding-left: 3rem;
     width: calc(var(--slide-width)*2);
     height: var(--slide-height);
-    overflow: hidden;
+    
     position: relative;
     
   }
