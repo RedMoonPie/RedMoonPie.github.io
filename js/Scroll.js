@@ -71,23 +71,31 @@
             ctd--
             cti--
             
+            
             elements[indexa].style.left = (cti*-slideSize) - 48+ "px"
             elements[indexa].style.top = 16+"px";
             
+           
+            elements[indexa].classList.remove('slide1');
             
             indexa--
             elements[indexa].style.left = (cti*-slideSize)  + "px"
-           
+            elements[indexa].classList.add('slide1');
 
+            
             elements[indexb].style.top = 0+"px";
             elements[indexb].style.left = (cti*-slideSize)-96 + "px"
+            elements[indexb].classList.remove('slide2');
             indexb--
-           
+            
+            elements[indexb].classList.add('slide2');
             
             
             elements[indexc].style.left = (cti*-slideSize) +96 + "px"
-            indexc--
             
+            elements[indexc].classList.remove('slide3');
+            indexc--
+            elements[indexc].classList.add('slide3');
             
             
             console.log(`ctd-1  = ${ctd}`)
