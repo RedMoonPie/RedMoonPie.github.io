@@ -28,18 +28,6 @@
     to {background-color: rgba(0,0,0,.6);top:1rem}
 }
 
-.slide-right {
-    transform: translateX(1rem);
-
-}
-.slide-left {
-    
-
-}
-.slide-mid {
-    
-
-}
 
 .slide1{
     transition: all 1s ;
