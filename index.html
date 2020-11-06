@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego's Page</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="/css/glider.css">
     <link rel="stylesheet" type="text/css" href="/css/slider.css">
 </head>
 <body>
@@ -37,16 +36,17 @@
                 <li class="M_el1"><b> Feel</b> free to <b>look around</b></li>
                 <li class="M_el2">/&gt My Projects</li>
                 <li class="M_el2">/&gt Certifications</li>
-                <li class="M_el2">/&gt Expirience</li>
+                <li class="M_el2">/&gt Experience</li>
                 <li class="M_el2">/&gt About me</li>
             </ul>
         </div>
         <!--Third Page-->
         <div class="Third_page">
-            <div class="wrapper">
+            <div class="wrapper" id="wrapper">
                 <div class="carousel">
-                        <ul>
-                            <li class="ele_container"> <img class="elements" src="assets/img/Home_photo.png"></li>
+                        <ul id="to_append">
+                            <li class="ele_container"> 
+                                <img class="elements" src="assets/img/Home_photo.png"></li>
                             <li class="ele_container"> <img class="elements" src="assets/img/Home_photo.png"></li>
                             <li class="ele_container"> <img class="elements" src="assets/img/Home_photo.png"></li>
                             <li class="ele_container"> <img class="elements" src="assets/img/Home_photo.png"></li>
@@ -64,7 +64,12 @@
 
     
 </body>
-<script src="/js/Scroll.js"></script>
+<script  src="/js/generateSlide.js"></script>
+<script  src="/js/fetchData.js"></script>
+<script  src="/js/Scroll.js"></script>
+<script  src="/js/index.js"></script>
+
+
 </html>
 
 
