@@ -155,12 +155,14 @@ ul li {
   font-size: 1.5rem;
   margin-left: 6rem;
 }
-.Third_page{
-
+#Third_page{
+  display: grid;
   grid-column-start: 1;
   grid-column-end: 13;
   grid-row-start: 15;
   grid-row-end: 20 ;
+  grid-template-columns: subgrid;
+  grid-template-rows: repeat(11, 7rem);
   position: relative;
 }
 

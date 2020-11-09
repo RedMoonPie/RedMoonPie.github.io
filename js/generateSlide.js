@@ -4,7 +4,7 @@ const GenerateSlide = (Slide) => {
     slide.classList.add('ele_container')
     slide.innerHTML = `
         <img class="elements" src=${Slide.cover}>
-        <span>${Slide.title}</span>
+        <span class="slide_title" >${Slide.title}</span>
         
     `;
     return slide;

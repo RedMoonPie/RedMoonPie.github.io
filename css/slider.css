@@ -30,7 +30,7 @@
 
 
 .slide1{
-    transition: all 1s ;
+    /*transition: all 1s ;*/
     
     
 }
@@ -43,7 +43,7 @@
     right: 0;
     background-color: rgba(0,0,0,0.6);
     animation-name: background-animation;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 .slide2{
    left: -48px;
@@ -58,12 +58,12 @@
 	right: 0;
     background-color: rgba(0,0,0,0);
     animation-name: background-animation2;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 .slide3{
     left: -96px;
-   
+    
 
 }
 .slide3:before {
@@ -75,7 +75,7 @@
 	right: 0;
     background-color: rgba(0,0,0,0.6);
     animation-name: background-animation;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 
@@ -83,6 +83,7 @@
     display: flex;
     position: relative;
     width: 1000000000px;
+    left: -734px;
     
   }
   .carousel ul{
@@ -91,14 +92,43 @@
     margin-block-start: 0;
   }
   .wrapper{
-    padding-top: 13rem;
+
     padding-left: 3rem;
     width: calc(var(--slide-width)*2);
     height: var(--slide-height);
-    
+    overflow: hidden;
     position: relative;
+
+    grid-column-start: 1;
+    grid-column-end: 7 ;
+    grid-row-start: 3;
+    grid-row-end: 8 ;
+
     
   }
   .animation{
     transition: left 1s,top 1s;
   }
+
+  .slide_title{
+      font-weight: 500;
+      position: absolute;
+      background-color: rgba(190, 186, 124, 0.692);
+      top: 85%;
+      padding-left: 20%;
+      padding-right: 20%;
+  }
+
+.description{
+    
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 6 ;
+    position: relative;
+    background-color: rgba(243, 202, 114, 0.212);
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    
+}
