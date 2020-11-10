@@ -2,24 +2,71 @@
     var ctd = 1;
     var cti = 0;
     var elements =[];
+    var description = [];
     var u= document.getElementById("to_append");
-    
+    var items_des = [];
+    var indexa;
+    var indexb;
+    var indexc;
+    var indexm = 4;
     function initV(){   
+
     indexa = 3;
     indexb = 4,
     indexc = 5;
     var Nodelist = document.getElementsByClassName("ele_container");
     elements = [...Nodelist];
     var esize = elements.length;
+    var description_items = document.getElementsByClassName("description_item");
+    
+    items_des= [...description_items];
+    
+    
+    var dsize = items_des.length;
+
     elements[0].classList.add('slide1');
     elements[1].classList.add('slide2');
     elements[1].style.top = 16+"px";
     elements[2].classList.add('slide3');
 
     cloneSlides(elements[0],elements[1],elements[2],elements[esize - 3],elements[esize - 2],elements[esize - 1]);
-   
+    clonedescp(items_des[0],items_des[1],items_des[2],items_des[dsize - 3],items_des[dsize - 2],items_des[dsize - 1])
 
     }
+    function clonedescp(f1,f2,f3,l1,l2,l3){
+        description = document.getElementById("description");
+        firstdclone = f1.cloneNode(true);
+        seconddclone = f2.cloneNode(true);
+        thirddclone = f3.cloneNode(true);
+        
+        description.appendChild(firstdclone);
+        description.appendChild(seconddclone);
+        description.appendChild(thirddclone);
+
+
+
+        lastdclone = l1.cloneNode(true);
+        lastdclone2 = l2.cloneNode(true);
+        lastdclone3 = l3.cloneNode(true);
+        
+        description.insertBefore(lastdclone3,f1);
+        description.insertBefore(lastdclone2,lastdclone3);
+        description.insertBefore(lastdclone,lastdclone2);
+
+        description_items = document.getElementsByClassName("description_item");
+    
+        items_des= [...description_items];
+
+        items_des.forEach(item => {
+            item.classList.add('hide');
+            item.classList.add('abs');
+        });
+        items_des[indexm].classList.remove('abs');
+        items_des[indexm].classList.remove('hide'); 
+      
+
+    }
+  
 
     function cloneSlides(f1,f2,f3,l1,l2,l3){
 
@@ -137,7 +184,8 @@
         
         
         checkindex();
-     
+        changedesc(direction);
+
         
     }
     function checkindex() { 
@@ -161,7 +209,20 @@
                 elements.forEach(element => element.classList.add('animation'));                     
             }
 
-
+            
+     }
+     function changedesc(direction){
+        
+        indexm = indexm + direction ;
+        if(indexm )
+        console.log(indexm);
+        items_des.forEach(item => {
+            item.classList.add('hide');
+            item.classList.add('abs');
+        });
+            items_des[indexm].classList.remove('abs');
+            items_des[indexm].classList.remove('hide');   
+        
 
      }
 
