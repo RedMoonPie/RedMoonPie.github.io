@@ -35,7 +35,7 @@ body{
 .Grid_Layout {
     display: grid;
     grid-template-columns: repeat(11, 7rem);
-    grid-template-rows: repeat(21, 7rem);
+    grid-template-rows: repeat(30, 7rem);
    
     
   }
@@ -115,14 +115,15 @@ ul li {
   grid-row-end: 8;
   background: url(/assets/img/Home_photo_5.png);
   background-attachment: fixed;
-  background-position: calc(100%);
+  background-position: 125%;
+  background-repeat: no-repeat;
+  background-size: 63% 120%;
   position: relative;
-  background-size: auto;
-  
   
 }
 .Myphoto_welcome img {
   object-fit: contain;
+  
 }
 
 .Menu_photo{
@@ -130,7 +131,7 @@ ul li {
   grid-column-start: 1;
   grid-column-end: 7;
   grid-row-start: 8;
-  grid-row-end: 13;
+  grid-row-end: 14;
   background-position: calc(100%);
   background: url(/assets/img/treemenuy.png);
   background-attachment: fixed;
@@ -141,7 +142,7 @@ ul li {
   grid-column-start: 7;
   grid-column-end: 13;
   grid-row-start: 9;
-  grid-row-end: 15 ;
+  grid-row-end: 14 ;
 }
 .Menu li{
   padding: 2.5rem 0 0 0;
@@ -159,10 +160,15 @@ ul li {
   display: grid;
   grid-column-start: 1;
   grid-column-end: 13;
-  grid-row-start: 13;
+  grid-row-start: 14;
   grid-row-end: 20 ;
   grid-template-columns: repeat(11, 7rem);
   grid-template-rows: repeat(6, 7rem);
   position: relative;
+  background-image: url("../assets/img/third.jpg");
+  background-size: 100% 100%;
+  
 }
 
+
+/*<a href='https://www.freepik.com/vectors/background'>Background vector created by starline - www.freepik.com</a>*/

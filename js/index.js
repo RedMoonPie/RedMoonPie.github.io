@@ -23,7 +23,7 @@ const GetSlides =  () => {
             const p2 = document.createElement('p');
             p2.classList.add("title_slide");
             p2.innerHTML = `${description.title}`;
-            p.innerHTML = `${description.description}`;
+            p.innerHTML = `/> ${description.description} < /`;
             
             d_div.appendChild(p);
             d_div.appendChild(p2);
