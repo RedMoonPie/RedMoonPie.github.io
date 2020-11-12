@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego's Page</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/slider.css">
+    <link rel="stylesheet" type="text/css" href="/css/certificates.css">
+</head>
 </head>
 <body>
     <div class="Grid_Layout">
@@ -35,15 +38,46 @@
                 <li class="M_el1"><b> Feel</b> free to <b>look around</b></li>
                 <li class="M_el2">/&gt My Projects</li>
                 <li class="M_el2">/&gt Certifications</li>
-                <li class="M_el2">/&gt Expirience</li>
+                <li class="M_el2">/&gt Experience</li>
                 <li class="M_el2">/&gt About me</li>
             </ul>
         </div>
-
+        <!--Third Page-->
+        <div id="Third_page" >
+            <div class="wrapper" id="wrapper">
+                <div class="carousel">
+                        <ul id="to_append">
+                            
+                        </ul>
+                </div>
+                
+            </div>
+            <button onclick="changeSlide(-1)" class="slide_button-left"></button>
+             <button onclick="changeSlide(1)" class="slide_button-right"></button>
+        </div>
+        <!--Fourth Page-->
+        <div id="fourth_page" >
+            <div id="myModal" class="modal">
+                <img class="modal_content" id="content_img">
+                <div id="caption"></div>
+            </div>
+        </div>
     </div>
 
     
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="/js/Scroll.js"></script>
+<script  src="/js/generateSlide.js"></script>
+<script  src="/js/fetchData.js"></script>
+<script  src="/js/Scroll.js"></script>
+<script  src="/js/getSlides.js"></script>
+<script  src="/js/modal.js"></script>
+<script  src="/js/generateCertificate.js"></script>
+<script  src="/js/getCertificate.js"></script>
+
+
+
 </html>
+
+
+
+
