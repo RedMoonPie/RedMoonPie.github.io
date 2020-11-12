@@ -34,8 +34,8 @@ body{
 }
 .Grid_Layout {
     display: grid;
-    grid-template-columns: repeat(11, 7fr);
-    grid-template-rows: repeat(27, 7fr);
+    grid-template-columns: repeat(11, 9.09vw);
+    grid-template-rows: repeat(30, 14vh);
    
     
   }
@@ -132,7 +132,7 @@ ul li {
   grid-column-start: 1;
   grid-column-end: 7;
   grid-row-start: 8;
-  grid-row-end: 14;
+  grid-row-end: 15;
   background-position: calc(100%);
   background: url(/assets/img/treemenuy.png);
   background-size: 50% 100%;
@@ -164,10 +164,10 @@ ul li {
   display: grid;
   grid-column-start: 1;
   grid-column-end: 13;
-  grid-row-start: 14;
-  grid-row-end: 21 ;
-  grid-template-columns: repeat(11, 7rem);
-  grid-template-rows: repeat(6, 7rem);
+  grid-row-start: 15;
+  grid-row-end: 22 ;
+  grid-template-columns: repeat(11, 9.09vw);
+  grid-template-rows: repeat(7, 14vh);
   position: relative;
   background-attachment: fixed;
   background-image: url("../assets/img/Minimalist-1.png");
