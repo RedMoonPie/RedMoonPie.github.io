@@ -176,7 +176,7 @@
     background: none;
     border-color: rgba(0, 0, 0, 0.281);
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 5;
     grid-row-start: 6;
     grid-row-end: 7 ;
     background-image: url("../assets/img/left.svg");
@@ -200,8 +200,8 @@
     background: none;
     border-color: rgba(0, 0, 0, 0.281);
     border-bottom: solid 3px rgba(0, 0, 0, 0.274);;
-    grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
     grid-row-start: 6;
     grid-row-end: 7 ;
     width: 10rem;

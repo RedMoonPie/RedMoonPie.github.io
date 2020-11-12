@@ -34,10 +34,10 @@ body{
 }
 .Grid_Layout {
     display: grid;
-    grid-template-columns: repeat(11, 9.09vw);
-    grid-template-rows: repeat(30, 14vh);
+    grid-template-columns: repeat(12, 8.3vw);
+    grid-template-rows: repeat(30, 14.29vh);
    
-    
+    overflow: hidden;
   }
 .Main_Logo{
   left :43%;
