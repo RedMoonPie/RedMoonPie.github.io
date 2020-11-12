@@ -165,7 +165,7 @@ ul li {
   grid-column-start: 1;
   grid-column-end: 13;
   grid-row-start: 14;
-  grid-row-end: 20 ;
+  grid-row-end: 21 ;
   grid-template-columns: repeat(11, 7rem);
   grid-template-rows: repeat(6, 7rem);
   position: relative;
