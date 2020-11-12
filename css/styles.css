@@ -35,7 +35,7 @@ body{
 .Grid_Layout {
     display: grid;
     grid-template-columns: repeat(11, 7fr);
-    grid-template-rows: repeat(18, 7fr);
+    grid-template-rows: repeat(27, 7fr);
    
     
   }
