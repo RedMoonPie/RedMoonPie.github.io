@@ -115,9 +115,9 @@ ul li {
   grid-row-end: 8;
   background: url(/assets/img/Home_photo_5.png);
   background-attachment: fixed;
-  background-position: 125%;
+  background-position: 115%;
   background-repeat: no-repeat;
-  background-size: 63% 120%;
+  background-size: 53% 120%;
   position: relative;
   
 }
@@ -134,6 +134,8 @@ ul li {
   grid-row-end: 14;
   background-position: calc(100%);
   background: url(/assets/img/treemenuy.png);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
 }
@@ -165,10 +167,14 @@ ul li {
   grid-template-columns: repeat(11, 7rem);
   grid-template-rows: repeat(6, 7rem);
   position: relative;
-  background-image: url("../assets/img/third.jpg");
-  background-size: 100% 100%;
-  
+  background-attachment: fixed;
+  background-image: url("../assets/img/Minimalist-1.png");
+  background-size: 100% 130%;
+  background-repeat: no-repeat;
+  background-position: 100%;
+
 }
+
 
 
 /*<a href='https://www.freepik.com/vectors/background'>Background vector created by starline - www.freepik.com</a>*/

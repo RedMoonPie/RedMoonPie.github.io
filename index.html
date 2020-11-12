@@ -6,6 +6,8 @@
     <title>Diego's Page</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" type="text/css" href="/css/slider.css">
+    <link rel="stylesheet" type="text/css" href="/css/certificates.css">
+</head>
 </head>
 <body>
     <div class="Grid_Layout">
@@ -53,6 +55,13 @@
             <button onclick="changeSlide(-1)" class="slide_button-left"></button>
              <button onclick="changeSlide(1)" class="slide_button-right"></button>
         </div>
+        <!--Fourth Page-->
+        <div id="fourth_page" >
+            <div id="myModal" class="modal">
+                <img class="modal_content" id="content_img">
+                <div id="caption"></div>
+            </div>
+        </div>
     </div>
 
     
@@ -60,7 +69,11 @@
 <script  src="/js/generateSlide.js"></script>
 <script  src="/js/fetchData.js"></script>
 <script  src="/js/Scroll.js"></script>
-<script  src="/js/index.js"></script>
+<script  src="/js/getSlides.js"></script>
+<script  src="/js/modal.js"></script>
+<script  src="/js/generateCertificate.js"></script>
+<script  src="/js/getCertificate.js"></script>
+
 
 
 </html>

@@ -9,6 +9,7 @@
     var indexb;
     var indexc;
     var indexm = 4;
+
     function initV(){   
 
     indexa = 3;
@@ -25,9 +26,10 @@
     var dsize = items_des.length;
 
     elements[0].classList.add('slide1');
-    elements[1].classList.add('slide2');
-    elements[1].style.top = 16+"px";
+    
+    elements[1].style.top = -20+"px";
     elements[2].classList.add('slide3');
+    elements[1].classList.add('slide2');
 
     cloneSlides(elements[0],elements[1],elements[2],elements[esize - 3],elements[esize - 2],elements[esize - 1]);
     clonedescp(items_des[0],items_des[1],items_des[2],items_des[dsize - 3],items_des[dsize - 2],items_des[dsize - 1])
@@ -109,13 +111,10 @@
 
     function changeSlide(direction)  {
 
-        
 
-        
         elements = [...Nodelist],
-        slideSize = elements[2].offsetWidth;
+        slideSize = elements[4].offsetWidth;
 
-        
 
         if(direction == 1){
             
@@ -123,20 +122,25 @@
             elements[indexa].classList.remove('slide1');
             
     
-            elements[indexa].style.left = (ctd*-slideSize)-48 + "px"
-            indexa++
+            elements[indexa].style.left = (ctd*-slideSize)-48 + "px";
+            indexa++;
             elements[indexa].classList.add('slide1');
 
 
             elements[indexa].classList.remove('slide2');
+            elements[indexa].style.left = (ctd*-slideSize) + "px";
             elements[indexa].style.top = 0+"px";
-            elements[indexa].style.left = (ctd*-slideSize) +"px"//(i *ctd)  + "px"
+            //(i *ctd)  + "px"
             //48
 
-            indexb++
-            elements[indexb].style.left = (ctd*-slideSize) - 48+"px"//(i *ctd)+ "px"
+            indexb++;
+            
+            
+            elements[indexb].style.left = (ctd*-slideSize) - 48+"px";//(i *ctd)+ "px"
             elements[indexb].classList.add('slide2');
-            elements[indexb].style.top = 16+"px";
+            elements[indexb].style.top = -20+"px";
+            
+            
 
             indexc++
             elements[indexb].classList.remove('slide3');
@@ -155,7 +159,7 @@
             
             
             elements[indexa].style.left = (cti*-slideSize) - 48+ "px"
-            elements[indexa].style.top = 16+"px";
+            elements[indexa].style.top = -20+"px";
             
            
             elements[indexa].classList.remove('slide1');
@@ -215,7 +219,6 @@
         
         indexm = indexm + direction ;
         if(indexm )
-        console.log(indexm);
         items_des.forEach(item => {
             item.classList.add('hide');
             item.classList.add('abs');
