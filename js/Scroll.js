@@ -9,13 +9,14 @@
     var indexb;
     var indexc;
     var indexm = 4;
+    var Nodelist = [];
 
     function initV(){   
 
     indexa = 3;
     indexb = 4,
     indexc = 5;
-    var Nodelist = document.getElementsByClassName("ele_container");
+    Nodelist = document.getElementsByClassName("ele_container");
     elements = [...Nodelist];
     var esize = elements.length;
     var description_items = document.getElementsByClassName("description_item");
@@ -26,10 +27,11 @@
     var dsize = items_des.length;
 
     elements[0].classList.add('slide1');
-    
+    elements[0].addEventListener("click", left);
     elements[1].style.top = -20+"px";
-    elements[2].classList.add('slide3');
     elements[1].classList.add('slide2');
+    elements[2].classList.add('slide3');
+    elements[2].addEventListener("click", right);
 
     cloneSlides(elements[0],elements[1],elements[2],elements[esize - 3],elements[esize - 2],elements[esize - 1]);
     clonedescp(items_des[0],items_des[1],items_des[2],items_des[dsize - 3],items_des[dsize - 2],items_des[dsize - 1])
@@ -107,7 +109,12 @@
         Nodelist = document.getElementsByClassName("ele_container")
         elements.forEach(element => element.classList.add('animation'));
     }
-    
+    function left() {
+        changeSlide(-1);
+    }
+    function right() {
+        changeSlide(1)
+    }
 
     function changeSlide(direction)  {
 
@@ -115,18 +122,16 @@
         elements = [...Nodelist],
         slideSize = elements[4].offsetWidth;
 
-
         if(direction == 1){
             
-            
+            elements[indexa].removeEventListener("click", left)
             elements[indexa].classList.remove('slide1');
-            
-    
             elements[indexa].style.left = (ctd*-slideSize)-48 + "px";
             indexa++;
             elements[indexa].classList.add('slide1');
-
-
+            elements[indexa].addEventListener("click", left)
+            
+           
             elements[indexa].classList.remove('slide2');
             elements[indexa].style.left = (ctd*-slideSize) + "px";
             elements[indexa].style.top = 0+"px";
@@ -143,10 +148,11 @@
             
 
             indexc++
+            elements[indexb].removeEventListener("click", right)
             elements[indexb].classList.remove('slide3');
             elements[indexc].style.left = (ctd*-slideSize) - 96+"px"//(i *ctd)  + "px"
             elements[indexc].classList.add('slide3');
-            
+            elements[indexc].addEventListener("click", right)
             
         
             ctd++
@@ -161,13 +167,14 @@
             elements[indexa].style.left = (cti*-slideSize) - 48+ "px"
             elements[indexa].style.top = -20+"px";
             
-           
+            elements[indexa].removeEventListener("click", left)
             elements[indexa].classList.remove('slide1');
             
             indexa--
             elements[indexa].style.left = (cti*-slideSize)  + "px"
             elements[indexa].classList.add('slide1');
-
+            elements[indexa].addEventListener("click", left)
+            
             
             elements[indexb].style.top = 0+"px";
             elements[indexb].style.left = (cti*-slideSize)-96 + "px"
@@ -179,9 +186,11 @@
             
             elements[indexc].style.left = (cti*-slideSize) +96 + "px"
             
+            elements[indexb].removeEventListener("click", right)
             elements[indexc].classList.remove('slide3');
             indexc--
             elements[indexc].classList.add('slide3');
+            elements[indexc].addEventListener("click", right)
             
            
         }
