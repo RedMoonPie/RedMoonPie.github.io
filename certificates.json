@@ -1,0 +1,119 @@
+{
+    "certifications": {
+          "development": [
+            
+            {
+                "id": 1,
+                "title": "Front-end Developer",
+                "cover": "https://i.imgur.com/qvaUAc0.jpg"
+                
+              },
+              {
+                "id": 2,
+                "title": "Git y GitHub",
+                "cover": "https://i.imgur.com/6wymE9Y.jpg"
+                
+              },
+              {
+                "id": 3,
+                "title": "Profesional de Js",
+                "cover": "https://i.imgur.com/812Aw1u.jpg"
+                
+              },
+              {
+                "id": 4,
+                "title": "Programación Orientada a Objetos",
+                "cover": "https://i.imgur.com/YF1wG1s.jpg"
+                
+              },
+              {
+                "id": 5,
+                "title": "Buenas practicas y entorno de Desarrollo",
+                "cover": "https://i.imgur.com/6pEVKYN.jpg"
+                
+              },
+              {
+                "id": 6,
+                "title": "Fundamentos de JS",
+                "cover": "https://i.imgur.com/bJHc9SH.jpg"
+                
+              },
+              {
+                "id": 7,
+                "title": "React JS",
+                "cover": "https://i.imgur.com/36Ytut7.jpg"
+                
+              },
+              {
+                "id": 8,
+                "title": "Ecmascript 6+",
+                "cover": "https://i.imgur.com/fzrvbdC.jpg"
+                
+              },
+              {
+                "id": 9,
+                "title": "Basico de JS",
+                "cover": "https://i.imgur.com/jBKOaun.jpg"
+                
+              },
+
+              {
+                "id": 10,
+                "title": "Asincronismo con JS",
+                "cover": "https://i.imgur.com/900kwNX.jpg"
+                
+              }
+          ],
+          "management":[
+              {
+              "id": 1,
+              "title": "SCRUM",
+              "cover": "https://i.imgur.com/PYJ2JiB.jpg"
+             
+              },
+              {
+                "id": 2,
+                "title": "Fundamentos de Gestión de Proyectos",
+                "cover": "https://i.imgur.com/hdtFPcS.jpg"
+                
+              },
+              {
+                "id": 3,
+                "title": "Business Model Canvas",
+                "cover": "https://i.imgur.com/gIIoxfD.jpg"
+                
+              },
+              {
+                "id": 4,
+                "title": "Técnicas de Negociación",
+                "cover": "https://i.imgur.com/iAxLGTI.jpg"
+                
+              }
+           ],
+           "design":[
+              {
+                "id": 1,
+                "title": "Design Sprint",
+                "cover": "https://i.imgur.com/Yg3pkVP.jpg"
+                
+              }
+           ],
+           "personal":[
+
+              {
+                "id": 5,
+                "title": "Motivación para equipos de Trabajo",
+                "cover": "https://i.imgur.com/zTTbqKD.jpg"
+                
+              },
+              {
+                "id": 6,
+                "title": "Liderazgo para equipos de trabajo",
+                "cover": "https://i.imgur.com/7WnQztq.jpg"
+                
+              }
+           ]
+
+
+        }
+}

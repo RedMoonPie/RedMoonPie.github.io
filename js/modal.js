@@ -4,13 +4,13 @@ var ele_myCertifications = [];
 var content_image = document.getElementById("content_img");
 
 function Ready() {
-    myCertifications = document.getElementsByClassName("certificate_img");
-    ele_myCertifications = [...myCertifications];
-  ele_myCertifications.forEach((cert) => {
+    myCertifications = document.querySelectorAll(".certificate_container");
+    myCertifications.forEach((cert) => {
 
     cert.onclick = function () {
       modal.style.display = "flex";
-      content_image.src = cert.src;
+      modal.style.position = "fixed";
+      content_image.src = cert.children[1].src;
       
     };
   });
