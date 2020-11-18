@@ -22,7 +22,18 @@ async function GetCertificate (){
         const Certificate = GenerateCertificate(certificate)   
         development.appendChild(Certificate);
   })
-
+  await certifications.management.forEach(certificate => {
+    const Certificate = GenerateCertificate(certificate)   
+    management.appendChild(Certificate);
+  })
+  await certifications.design.forEach(certificate => {
+  const Certificate = GenerateCertificate(certificate)   
+  design.appendChild(Certificate);
+  })
+  await certifications.personal.forEach(certificate => {
+  const Certificate = GenerateCertificate(certificate)   
+  personal.appendChild(Certificate);
+  })  
   
 
 }   

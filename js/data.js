@@ -55,42 +55,47 @@ var certifications = {
   management: [
     {
       id: 1,
-      title: "SCRUM",
-      cover: "https://i.imgur.com/PYJ2JiB.jpg",
+      title: "Scrum Foundation",
+      cover: "./assets/certificates/Management/Scrum-Foundation-1.jpg",
     },
     {
       id: 2,
-      title: "Fundamentos de Gestión de Proyectos",
-      cover: "https://i.imgur.com/hdtFPcS.jpg",
+      title: "SCRUM",
+      cover: "./assets/certificates/Management/diploma-scrum-1.jpg",
     },
     {
       id: 3,
-      title: "Business Model Canvas",
-      cover: "https://i.imgur.com/gIIoxfD.jpg",
+      title: "Fundamentos de Gestión de Proyectos",
+      cover: "./assets/certificates/Management/diploma-gestion-1.jpg",
     },
     {
       id: 4,
+      title: "Business Model Canvas",
+      cover: "./assets/certificates/Management/diploma-canvas-1.jpg",
+    },
+    {
+      id: 5,
       title: "Técnicas de Negociación",
-      cover: "https://i.imgur.com/iAxLGTI.jpg",
+      cover: "./assets/certificates/Management/diploma-tecnicas-negociacion-1.jpg",
     }
   ],
   design: [
     {
       id: 1,
       title: "Design Sprint",
-      cover: "https://i.imgur.com/Yg3pkVP.jpg",
+      cover: "./assets/certificates/Design/diploma-design-sprint-1.jpg",
     }
   ],
   personal: [
     {
       id: 5,
       title: "Motivación para equipos de Trabajo",
-      cover: "https://i.imgur.com/zTTbqKD.jpg",
+      cover: "./assets/certificates/Personal/diploma-liderazgo-equipos-1.jpg",
     },
     {
       id: 6,
       title: "Liderazgo para equipos de trabajo",
-      cover: "https://i.imgur.com/7WnQztq.jpg",
+      cover: "./assets/certificates/Personal/diploma-motivacion-1.jpg",
     }
   ],
 };
