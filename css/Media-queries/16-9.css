@@ -2,7 +2,7 @@
     .Grid_Layout {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(42, 25vw);
+        grid-template-rows: repeat(42, 16vh);
         overflow: hidden;
       }
       .Main_Logo{
@@ -63,7 +63,7 @@
         
       }
       ul li {
-        padding-top: 1.5rem;
+        padding-top: 5.5vw;
         padding-left: 10px;
       }
       .el1{
@@ -76,7 +76,7 @@
         padding-left: 4rem;
       }
       .el6{
-        padding-left: 19rem ;
+        padding-left: 60vw ;
       }
       /* Photo Image*/
       .Myphoto_welcome{
@@ -88,7 +88,7 @@
         grid-row-end: 4;
         background: url(/assets/img/Home_photo_5.png);
         background-repeat: no-repeat;
-        background-size:150% 110%;
+        background-size:15rem 100%;
         background-position: 50% 80%;
         border-bottom: solid 3px black;
         border-left: solid 2px black;
