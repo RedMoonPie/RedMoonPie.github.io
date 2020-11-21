@@ -30,12 +30,12 @@ regular{
 }
 .sixth-box{
     font-family: less-font-light;
-    font-size: 1.8vw;
-    line-height: 4vw; 
+    font-size: 1.5vw;
+    line-height: 2.5rem; 
     text-align: center;
     margin-right: 20px;
     grid-column-start: 6;
     grid-column-end: 13;
-    grid-row-start: 38;
+    grid-row-start: 39;
     grid-row-end: 43;
 }

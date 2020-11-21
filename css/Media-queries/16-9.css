@@ -1,0 +1,142 @@
+@media only screen and (max-width: 480px) {
+    .Grid_Layout {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(42, 4rem);
+        overflow: hidden;
+      }
+      .Main_Logo{
+       position: fixed;
+        transition: .5s;
+        z-index: 4;
+
+       
+      }
+      .Main_Logo > img {
+        width: 30%;
+        margin-block-end: auto;
+        left: 38%;
+        
+      }
+      .Text_Hello_1{
+        border-left: 1px solid;
+        padding-left: 30px;
+        padding-top: 10px;
+        font-size: 2rem;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      
+      }
+      .Name_Welcome{
+        font-family: less-font-light;
+        padding-left: 30px;
+        font-size: 1rem;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+      /* paragraph*/
+      .Paragraph_Welcome{
+        
+        font-family: less-font-light;
+        font-size: 1rem;
+        grid-column-start: 2;
+        grid-column-end: 13;
+        grid-row-start: 3;
+        grid-row-end: 8;
+        
+      }
+      ul li {
+        padding-top: 1.5rem;
+        padding-left: 10px;
+      }
+      .el1{
+        padding-top: 4rem;
+      }
+      .el4{
+        padding-left: 2rem;
+      }
+      .el5{
+        padding-left: rem;
+      }
+      .el6{
+        padding-left: 27rem;
+      }
+      /* Photo Image*/
+      .Myphoto_welcome{
+        
+        display: flex;
+        grid-column-start: 7;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-row-end: 8;
+        background: url(/assets/img/Home_photo_5.png);
+
+        background-repeat: no-repeat;
+        background-position: 100% 20%;
+        background-size:100% 50%;
+        position: relative;
+       
+        
+      }
+     
+        /* page 2 */ 
+        .Menu_photo{
+          display: flex;
+          grid-column-start: 1;
+          grid-column-end: 13;
+          grid-row-start: 8;
+          grid-row-end: 13;
+          background: url(/assets/img/treemenuy.png);
+          background-size: 100% 100%;
+          background-size: 100% 70%;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+          position: relative;
+        }
+        .Menu{
+          font-family: less-font-light;
+          grid-column-start: 7;
+          grid-column-end: 13;
+          grid-row-start: 9;
+          grid-row-end: 14 ;
+        }
+        /*slider*/
+        .ele_container{
+          padding: 0;
+          margin-bottom: 2rem;
+          display: flex;
+          flex-direction: row;
+          height: 75%;
+          width: 8rem;
+          position: relative;   
+      }
+      .wrapper{
+
+        padding-top: 3rem;
+        padding-left: 25rem;
+        width: calc(var(--slide-width)*2);
+        height: calc(var(--slide-height)+100);
+        overflow: hidden;
+        position: relative;
+    
+        grid-column-start: 1;
+        grid-column-end: 7 ;
+        grid-row-start: 2;
+        grid-row-end: 8 ;
+  
+      }
+      .slide2{
+        top: -20px;
+        height: 92%;
+       left: -48px;
+       z-index: 1;
+       box-shadow: 10px 20px 10px 1px rgba(0, 0, 0, 0.089);
+    
+    }
+    
+}

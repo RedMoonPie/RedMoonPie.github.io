@@ -39,7 +39,8 @@ body{
    
     overflow: hidden;
   }
-.Main_Logo{
+
+.Main_Logo > img {
   left :43%;
   position: fixed;
   grid-column-start: 6;
