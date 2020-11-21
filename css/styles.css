@@ -35,7 +35,7 @@ body{
 .Grid_Layout {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(42, 6rem);
+    grid-template-rows: repeat(42, 8vw);
    
     overflow: hidden;
   }
@@ -105,7 +105,7 @@ ul li {
   padding-left: 12rem;
 }
 .el6{
-  padding-left: 27rem;
+  padding-left: 23rem;
 }
 /* Photo Image*/
 .Myphoto_welcome{
