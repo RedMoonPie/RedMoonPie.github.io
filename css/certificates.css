@@ -29,7 +29,7 @@ light{
     padding-top: 5%;
     background-image: url("../assets/img/Third-page-background-2.jpeg");
     position: relative;
-    background-attachment: fixed;
+    
     background-size: 100% 100%;
     overflow:auto;
   }
@@ -58,7 +58,7 @@ light{
     object-fit: cover;
     border-top: solid 3px gold;
     border-left: solid 2px gold;
-
+    filter: brightness(40%);
 }
 
 .certificate_title{

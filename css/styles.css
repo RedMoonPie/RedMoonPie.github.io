@@ -49,7 +49,7 @@ body{
 
 .Main_Logo > img {
   left :43%;
-  position: fixed;
+  position: absolute;
   grid-column-start: 6;
   grid-column-end: 8;
   grid-row-start: 1;
