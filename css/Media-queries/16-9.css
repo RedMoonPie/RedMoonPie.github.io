@@ -235,7 +235,7 @@
   background: url(/assets/img/aboutus.png);
   background-size: 120% 80%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: local;
   position: relative;
   background-position: 0% 100%;
 
@@ -246,9 +246,10 @@
   font-size: 3.5vw;
   line-height: 2.5rem; 
   text-align: center;
+  margin: auto;
   grid-column-start: 2;
   grid-column-end: 12;
-  grid-row-start: 2;
+  grid-row-start: 1;
   grid-row-end: 8;
 }
 
