@@ -266,7 +266,7 @@
 .modal_content {
   z-index: 1;
   width: 90%;
-  height: 50%;
+  height: 45%;
   margin: auto;
   padding: 3%;
   -webkit-animation-name: zoom;
