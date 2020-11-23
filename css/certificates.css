@@ -29,9 +29,9 @@ light{
     padding-top: 5%;
     background-image: url("../assets/img/Third-page-background-2.jpeg");
     position: relative;
-    
     background-size: 100% 100%;
     overflow:auto;
+
   }
 
 
@@ -45,6 +45,7 @@ light{
     align-items: center;
     flex-wrap: wrap;
     display: inline-table;
+    transform: translate3d(0,0,0);
   
     
 }
