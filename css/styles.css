@@ -20,7 +20,6 @@ html{
 
 p{
   margin: 0px;
-
 }
 b{
   font-family: less-font;
@@ -61,7 +60,7 @@ body{
 .Text_Hello{
   display: block;
   font-family: less-font;
-  font-size: 4rem;
+  font-size: 4vw;
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 2;
@@ -81,7 +80,7 @@ body{
 .Name_Welcome{
   font-family: less-font-light;
   padding-left: 30px;
-  font-size: 2.1rem;
+  font-size: 2.2vw;
   grid-column-start: 2;
   grid-column-end: 6;
   grid-row-start: 3;
@@ -91,7 +90,7 @@ body{
 .Paragraph_Welcome{
   
   font-family: less-font-light;
-  font-size: 1.5rem;
+  font-size: 1.7vw;
   grid-column-start: 2;
   grid-column-end: 7;
   grid-row-start: 3;
@@ -161,13 +160,11 @@ ul li {
   padding: 2.5rem 0 0 0;
 }
 .M_el1{
-  font-size: 2rem;
-  margin-left: 5rem;
-  margin-bottom: 2rem;
+  font-size: 2.5vw;
 }
 .M_el2{
-  font-size: 1.5rem;
-  margin-left: 6rem;
+  font-size: 1.8vw;
+  margin-left: 1rem;
 }
 #Third_page{
   display: grid;

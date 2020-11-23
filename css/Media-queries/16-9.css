@@ -121,16 +121,23 @@
           grid-row-end: 22 ;
           margin: auto;
         }
+        .M_el1{
+          font-size: 5vw;
+        }
+        .M_el2{
+          font-size: 4.2vw;
+          margin-left: 1rem;
+        }
 
       /*page3*/
       #Third_page{
         display: grid;
         grid-column-start: 1;
         grid-column-end: 13;
-        grid-row-start: 28;
-        grid-row-end: 32 ;
+        grid-row-start: 22;
+        grid-row-end: 29 ;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(7, 6rem);
+        grid-template-rows: repeat(7, 16vh);
         position: relative;
         background-attachment: fixed;
         background-image: url("../assets/img/Minimalist-1.png");
@@ -173,5 +180,77 @@
        box-shadow: 10px 20px 10px 1px rgba(0, 0, 0, 0.089);
     
     }
-    
+
+    #fourth_page{
+      grid-column-start: 1;
+      grid-column-end: 13;
+      grid-row-start: 29;
+      grid-row-end: 36;
+    }
+
+    /*page 4 */
+    .certificate_container {
+      position: relative;
+      width: 46%;
+      display: flex;
+      padding: 2%;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      display: inline-table;
+      transform: translate3d(0,0,0);
+  }
+  .cert-title {
+    font-family: less-font;
+    font-size: 6vw;
+    padding-left: 50px;
+}
+  .certificate_title {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    font-size: 2.2vw;
+    font-family: less-font;
+    width: 90%;
+    padding: 2%;
+    background-color: rgba(255, 235, 205, 0.39);
+    border-radius: 19px 19px 0px 0px;
+}
+.certifications-title {
+  width: 100%;
+  text-align: end;
+  padding-right: 50px;
+  font-family: less-font;
+  color: rgba(0, 0, 0, 0.438);
+  font-size: 6vw;
+  margin-bottom: 70px;
+}
+
+.sixth-photo{
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 8;
+
+  background: url(/assets/img/aboutus.png);
+  background-size: 120% 80%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  background-position: 0% 100%;
+
+  filter: opacity(15%);
+}
+.sixth-box{
+  font-family: less-font-light;
+  font-size: 3.5vw;
+  line-height: 2.5rem; 
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 2;
+  grid-row-end: 8;
+}
+
+
 }

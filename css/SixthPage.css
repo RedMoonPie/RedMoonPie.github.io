@@ -13,11 +13,21 @@
 regular{
     font-family: less-font;
 }
-.sixth-photo{
-    grid-column-start: 1;
+#sixth-page{
+  display: grid;
+  grid-column-start: 1;
     grid-column-end: 13;
     grid-row-start: 36;
     grid-row-end: 43;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, 16vh);
+    
+}
+.sixth-photo{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 8;
   
     background: url(/assets/img/aboutus.png);
     background-size: 75% 100%;
@@ -35,6 +45,6 @@ regular{
     margin-right: 20px;
     grid-column-start: 6;
     grid-column-end: 13;
-    grid-row-start: 38;
-    grid-row-end: 43;
+    grid-row-start: 3;
+    grid-row-end: 8;
 }

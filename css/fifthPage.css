@@ -11,27 +11,35 @@
    src: url("/assets/fonts/Less\ Sans/Less-Light.otf") format("opentype");
  }
 
-.fifth-photo{
-
-    display: flex;
+#fifth-page{
+    display: grid;
     grid-column-start: 1;
     grid-column-end: 13;
     grid-row-start: 29;
-    grid-row-end: 33;
-    background-position: calc(100%);
+    grid-row-end: 36;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, 16vh);
+}
+
+.fifth-photo{
+
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 4;
     background: url(/assets/img/glasses-1.png);
-    background-size: 100% 50%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: relative;
+
 
 }
 .time-line{
     font-family: less-font;
     grid-column-start: 1;
     grid-column-end: 13;
-    grid-row-start: 32;
-    grid-row-end: 33;
+    grid-row-start: 3;
+    grid-row-end: 4;
     margin-left: 10%;
     margin-top: 150px;
 }
@@ -46,7 +54,7 @@
 #experience-title{
 
     grid-column: 1/13;
-    grid-row: 30/32;
+    grid-row: 2/3;
     text-align: end;
     padding-right: 50px;
     font-family: less-font;
