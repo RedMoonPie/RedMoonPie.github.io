@@ -14,7 +14,9 @@
   --slide-height:352px;
   --slide-width:304px;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 
 p{
   margin: 0px;
@@ -28,6 +30,11 @@ ul{
   margin: 0px;
   padding: 0px;
 }
+a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
 body{
   margin: 0px;
   padding: 0px;
@@ -35,7 +42,7 @@ body{
 .Grid_Layout {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(42, 8vw);
+    grid-template-rows: repeat(42, 16vh);
    
     overflow: hidden;
   }
@@ -144,6 +151,7 @@ ul li {
 }
 .Menu{
   font-family: less-font-light;
+  margin: auto;
   grid-column-start: 7;
   grid-column-end: 13;
   grid-row-start: 9;

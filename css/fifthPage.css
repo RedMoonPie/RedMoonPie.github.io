@@ -31,10 +31,10 @@
     font-family: less-font;
     grid-column-start: 1;
     grid-column-end: 13;
-    grid-row-start: 33;
-    grid-row-end: 34;
+    grid-row-start: 32;
+    grid-row-end: 33;
     margin-left: 10%;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 .timeline-title{
     font-size: 3vw;
@@ -43,4 +43,15 @@
 .time-line__img{
     width: 100%;
     height: auto;
+}
+#experience-title{
+
+    grid-column: 1/13;
+    grid-row: 30/32;
+    text-align: end;
+    padding-right: 50px;
+    font-family: less-font;
+    color: rgba(0, 0, 0, 0.438);
+    font-size: 4vw;
+    margin-bottom: 80px;
 }

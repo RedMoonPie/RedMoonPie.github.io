@@ -179,6 +179,17 @@
 .hide{
    visibility: hidden;
 }
+.projects-title{
+    font-family: less-font;
+    grid-column: 1/13;
+    grid-row: 2/4;
+    text-align: end;
+    font-family: less-font;
+    color: rgba(0, 0, 0, 0.438);
+    font-size: 4vw;
+    padding-right: 50px;
+    margin-bottom: 80px;
+}
 
 
 

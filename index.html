@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego's Page</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="/css/slider.css">
-    <link rel="stylesheet" type="text/css" href="/css/certificates.css">
-    <link rel="stylesheet" href="/css/fifthPage.css">
-    <link rel="stylesheet" href="/css/SixthPage.css">
+    <link defer rel="stylesheet" type="text/css" href="/css/slider.css">
+    <link defer rel="stylesheet" type="text/css" href="/css/certificates.css">
+    <link defer rel="stylesheet" href="/css/fifthPage.css">
+    <link defer rel="stylesheet" href="/css/SixthPage.css">
     <link rel="stylesheet" href="/css/Media-queries/16-9.css">
 </head>
 </head>
@@ -39,14 +39,15 @@
         <div class="Menu">
             <ul>
                 <li class="M_el1"><b> Feel</b> free to <b>look around</b></li>
-                <li class="M_el2">/&gt My Projects</li>
-                <li class="M_el2">/&gt Certifications</li>
-                <li class="M_el2">/&gt Experience</li>
-                <li class="M_el2">/&gt About me</li>
+                <li class="M_el2">/&gt <a href="#Third_page">My Projects</a></li>
+                <li class="M_el2">/&gt <a href="#fourth_page">Certifications</a></li>
+                <li class="M_el2">/&gt <a href="#fifth-page">Experience</a></li>
+                <li class="M_el2">/&gt <a href="#">About me</a></li>
             </ul>
         </div>
         <!--Third Page-->
         <div id="Third_page" >
+            <p class="projects-title">My projects</p>
             <div class="wrapper" id="wrapper">
                 <div class="carousel">
                         <ul id="to_append">
@@ -79,7 +80,8 @@
             </div>
         </div>
         <!--Fifth Page-->
-        <div class="fifth-photo"></div>
+        <p id="experience-title">Experience</p>
+        <div id="fifth-page" class="fifth-photo"></div>
         <div class="time-line">
             <p class="timeline-title">Journey<light> starting</light> here!</p>
             <img class="time-line__img" src="./assets/img/timeline.svg" alt="">
