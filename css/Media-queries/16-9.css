@@ -140,7 +140,6 @@
         grid-template-rows: repeat(7, 16vh);
         position: relative;
         background-attachment: fixed;
-        background-image: url("../assets/img/Minimalist-1.png");
         background-size: 100% 130%;
         background-repeat: no-repeat;
         background-position: 100%;
@@ -157,6 +156,18 @@
           width: 8rem;
           position: relative;   
       }
+      .projects-title {
+        font-family: less-font;
+        grid-column: 1/13;
+        margin-top: 50px;
+        grid-row: 1/2;
+        text-align: end;
+        font-family: less-font;
+        color: rgba(0, 0, 0, 0.438);
+        font-size: 6vw;
+        padding-right: 50px;
+        margin-bottom: 80px;
+    }
       .wrapper{
 
         padding-top: 3rem;
@@ -172,6 +183,21 @@
         grid-row-end: 8 ;
   
       }
+      .description {
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 4;
+        grid-row-end: 8;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0);
+        text-align: left;
+        padding: 3rem;
+        margin-top: 4rem;
+    }
+    .description_item {
+      font-family: less-font-light;
+      font-size: 3.5vw;
+  }
       .slide2{
         top: -20px;
         height: 92%;
