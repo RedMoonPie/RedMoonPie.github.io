@@ -99,7 +99,7 @@ body{
   
 }
 ul li {
-  padding-top: 2rem;
+  padding-top: 2.5vw;
   padding-left: 30px;
 }
 .el1{
@@ -112,7 +112,7 @@ ul li {
   padding-left: 12rem;
 }
 .el6{
-  padding-left: 23rem;
+  padding-left: 35vw;
 }
 /* Photo Image*/
 .Myphoto_welcome{
