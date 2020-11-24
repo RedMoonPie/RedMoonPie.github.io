@@ -112,6 +112,7 @@
           background-attachment: fixed;
           background-repeat: no-repeat;
           position: relative;
+          transform: translate3d(0,0,0);
         }
         .Menu{
           font-family: less-font-light;
@@ -143,6 +144,7 @@
         background-size: 100% 130%;
         background-repeat: no-repeat;
         background-position: 100%;
+        transform: translate3d(0,0,0);
       
       }
       
@@ -276,7 +278,7 @@
   grid-row-end: 8;
 
   background: url(/assets/img/aboutus.png);
-  background-size: 120% 80%;
+  background-size: 120% 70%;
   background-repeat: no-repeat;
   background-attachment: local;
   position: relative;
