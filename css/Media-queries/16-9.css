@@ -178,11 +178,27 @@
         position: relative;
     
         grid-column-start: 1;
-        grid-column-end: 7 ;
+        grid-column-end: 13 ;
         grid-row-start: 2;
         grid-row-end: 8 ;
   
       }
+
+
+      .slide_title{
+        font-family: less-font-light;
+        font-weight: 500;
+        position: absolute;
+        background-color: rgba(190, 186, 124, 0.603);
+        top: 85%;
+        width: 90%;
+        font-size: 4vw;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 10%;
+    }
+
+
       .description {
         grid-column-start: 1;
         grid-column-end: 13;
@@ -192,12 +208,12 @@
         background-color: rgba(0, 0, 0, 0);
         text-align: left;
         padding: 3rem;
-        margin-top: 5rem;
+        margin-top: 2rem;
         overflow: auto;
     }
     .description_item {
       font-family: less-font-light;
-      font-size: 3.5vw;
+      font-size: 4.5vw;
   }
       .slide2{
         top: -20px;
