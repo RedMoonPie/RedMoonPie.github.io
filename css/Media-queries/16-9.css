@@ -9,13 +9,13 @@
        position: fixed;
         transition: .5s;
         z-index: 4;
-
+        width: 100%;
        
       }
       .Main_Logo > img {
-        width: 30%;
+        width: 41%;
         margin-block-end: auto;
-        left: 38%;
+        left: 35%;
         
         
       }
@@ -106,10 +106,8 @@
           grid-column-end: 13;
           grid-row-start: 8;
           grid-row-end: 15;
-          background: url(/assets/img/treemenuy.png);
+          background: url(/assets/img/media2.jpg);
           background-size: 100% 100%;
-          background-repeat: no-repeat;
-          background-attachment: fixed;
           background-repeat: no-repeat;
           position: relative;
           transform: translate3d(0,0,0);
@@ -138,17 +136,17 @@
         grid-row-start: 22;
         grid-row-end: 29 ;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(7, 16vh);
+        grid-template-rows: repeat(6, 16vh);
         position: relative;
-        background-attachment: fixed;
-        background-size: 100% 130%;
+        background-size: 100% 100%;
+        background-attachment: unset;
         background-repeat: no-repeat;
-        background-position: 100%;
         transform: translate3d(0,0,0);
       
       }
       
         /*slider*/
+        
         .ele_container{
           padding: 0;
           margin-bottom: 2rem;
@@ -204,13 +202,13 @@
       .description {
         grid-column-start: 1;
         grid-column-end: 13;
-        grid-row-start: 5;
-        grid-row-end: 8;
+        grid-row-start: 4;
+        grid-row-end: 7;
         position: relative;
         background-color: rgba(0, 0, 0, 0);
         text-align: left;
         padding: 3rem;
-        margin-top: 5%;
+        margin-top: 15%;
         overflow: auto;
     }
     .description_item {
@@ -231,6 +229,8 @@
       grid-column-end: 13;
       grid-row-start: 29;
       grid-row-end: 36;
+      background-image: url("/assets/img/media10.jpg");
+      transform: translate3d(0,0,0);
     }
 
     /*page 4 */
@@ -245,20 +245,33 @@
       display: inline-table;
       transform: translate3d(0,0,0);
   }
+  .certificate_img {
+    position: relative;
+      margin: 0px;
+      width: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+      border-top: solid 3px rgb(255, 255, 255);
+      border-left: solid 2px rgb(255, 255, 255);
+      filter: brightness(75%);
+  }
   .cert-title {
     font-family: less-font;
     font-size: 6vw;
     padding-left: 50px;
+    color: white;
 }
   .certificate_title {
     position: absolute;
     text-align: center;
     z-index: 1;
-    font-size: 2.2vw;
+    font-size: 2.8vw;
     font-family: less-font;
     width: 90%;
+    color: white;
     padding: 2%;
-    background-color: rgba(255, 235, 205, 0.39);
+    margin-top: 1px;
+    background-color: rgba(0, 0, 0, 0.658);
     border-radius: 19px 19px 0px 0px;
 }
 .certifications-title {
@@ -266,7 +279,7 @@
   text-align: end;
   padding-right: 50px;
   font-family: less-font;
-  color: rgba(0, 0, 0, 0.438);
+  color: rgb(255, 255, 255);
   font-size: 6vw;
   margin-bottom: 70px;
 }
@@ -278,13 +291,13 @@
   grid-row-end: 8;
 
   background: url(/assets/img/aboutus.png);
-  background-size: 120% 70%;
+  background-size: 120% 65%;
   background-repeat: no-repeat;
   background-attachment: local;
   position: relative;
   background-position: 0% 100%;
 
-  filter: opacity(50%);
+  filter: opacity(30%);
 }
 .sixth-box{
   font-family: less-font-light;
@@ -296,6 +309,9 @@
   grid-column-end: 12;
   grid-row-start: 1;
   grid-row-end: 8;
+  border-left: solid 2px black;
+  border-right: solid 2px black;
+  border-radius: 15px;
 }
 
 .modal {
@@ -319,5 +335,63 @@
   animation-name: zoom;
   animation-duration: 0.6s;
 }
+
+/* Page 5 */
+
+
+#fifth-page{
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 36;
+  grid-row-end: 42;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(7, 16vh);
+}
+.fifth-photo{
+
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 8;
+  background: url(/assets/img/third.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: unset;
+
+
+}
+.time-line{
+  font-family: less-font;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  margin-left: 10%;
+  margin-top: 150px;
+}
+.timeline-title{
+  font-size: 6vw;
+  margin-left: 10%;
+}
+.time-line__img{
+  width: 40rem;
+  height: 30vw;
+}
+/*six page*/
+
+#sixth-page{
+  display: grid;
+  grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 43;
+    grid-row-end: 50;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, 16vh);
+    
+}
+
+
+
 
 }

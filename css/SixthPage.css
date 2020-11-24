@@ -21,7 +21,7 @@ regular{
     grid-row-end: 43;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(7, 16vh);
-    
+
 }
 .sixth-photo{
     grid-column-start: 1;
