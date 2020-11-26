@@ -127,12 +127,22 @@ var projects = {
     {
       id: 3,
       title: "Crud de administracion Web Asp.net",
-      cover: "./assets/Projects/Python/pilas-arboles",
+      cover: "./assets/Projects/c#/crudAsp.png",
       gitlink: "https://github.com/RedMoonPie/djkstra_python.png",
       description:
-        "Programacion de estructuras de datos para el entendimiento de los nodos y su funcionamiento conjunto",
-        type: "python",
-    }
+        "Pagina de administracion dinamica de pagina web utilizando Asp.net, en este se utilizaron conceptos relacionados al entity framework, Asp.net core, Docker y kubernetes",
+        type: "c#",
+    },
+    {
+      id: 4,
+      title: "Base de datos sqlServer en Docker",
+      cover: "./assets/Projects/c#/sqlServer.png",
+      gitlink: "https://github.com/RedMoonPie/djkstra_python.png",
+      description:
+        "Conexion y enlace de base de datos sqlserver con pagina de administracion web, configuracion de base de datis en contenedor Docker",
+        type: "c#",
+    },
+  
 
 
   ],

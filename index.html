@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link defer rel="stylesheet" type="text/css" href="/css/slider.css">
     <link async rel="stylesheet" type="text/css" href="/css/certificates.css">
-    <link async  rel="stylesheet" href="/css/fifthPage.css">
+    <link async rel="stylesheet" href="/css/fifthPage.css">
     <link defer rel="stylesheet" href="/css/SixthPage.css">
     <link rel="stylesheet" href="/css/Media-queries/16-9.css">
 </head>
 </head>
+
 <body>
     <div class="Grid_Layout">
         <div class="Main_Logo">
@@ -21,7 +23,7 @@
             <p class="Text_Hello_1">Hello!</p>
         </div>
         <div class="Name_Welcome">
-            <p >My name is <b>Diego</b></p>
+            <p>My name is <b>Diego</b></p>
         </div>
         <div class="Paragraph_Welcome">
             <ul>
@@ -42,87 +44,103 @@
                 <li class="M_el2">/&gt <a href="#Third_page">My Projects</a></li>
                 <li class="M_el2">/&gt <a href="#fourth_page">Certifications</a></li>
                 <li class="M_el2">/&gt <a href="#fifth-page">Experience</a></li>
-                <li class="M_el2">/&gt <a href="#">About me</a></li>
+                <li class="M_el2">/&gt <a href="#sixth-page">About me</a></li>
             </ul>
         </div>
         <!--Third Page-->
-        <div id="Third_page" >
+        <div id="Third_page">
             <p class="projects-title">My projects</p>
             <div class="wrapper" id="wrapper">
                 <div class="carousel">
-                        <ul id="to_append">
-                            
-                        </ul>
+                    <ul id="to_append">
+
+                    </ul>
                 </div>
-                
+
             </div>
 
         </div>
         <!--Fourth Page-->
-        <div id="fourth_page" >
+        <div id="fourth_page">
             <div id="myModal" class="modal">
                 <img class="modal_content" id="content_img">
                 <div id="caption"></div>
             </div>
             <p class="certifications-title">Certifications</p>
             <div id="development">
-                <p class="cert-title">Dev<light>elopment</light></p>
+                <p class="cert-title">Dev<light>elopment</light>
+                </p>
             </div>
             <div id="management">
                 <p class="cert-title">Management <light>and </light>Business</p>
             </div>
-            
+
             <div id="design">
-                <p class="cert-title"><light>De</light>sign</p>
+                <p class="cert-title">
+                    <light>De</light>sign
+                </p>
             </div>
             <div id="personal">
-                <p class="cert-title">Personal<light> Growth</light></p>
+                <p class="cert-title">Personal<light> Growth</light>
+                </p>
             </div>
         </div>
         <!--Fifth Page-->
         <div id="fifth-page">
 
             <p id="experience-title">Experience</p>
-        <div class="fifth-photo"></div>
-        <div class="time-line">
-            <p class="timeline-title">Journey<light> starting</light> here!</p>
-            <img class="time-line__img" src="./assets/img/timeline.svg" alt="">
-        </div>
+            <div class="video__presentation">
+                <video controls>
+                    <source src="./assets/videos/Presentation.mp4" type="video/mp4">
+                    <source src="./assets/videos/Presentation.mp4" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <div class="fifth-photo"></div>
+            <div class="time-line">
+                <p class="timeline-title">Journey<light> starting</light> here!</p>
+                <img class="time-line__img" src="./assets/img/timeline.svg" alt="">
+            </div>
 
         </div>
-        
+
 
         <!--sixth Page-->
         <div id="sixth-page">
             <div class="sixth-photo"></div>
             <div class="sixth-box">
-            <p class="sixth-text">&lt/&gt</p>
-            <p class="sixth-paragraph"> Diego <regular>believes</regular> in a world <regular>connected</regular> by <regular>technology</regular>, but led by <regular>people.</regular>
-                He values <regular>social connections</regular> and <regular>appreciate constructive feedback</regular>, 
-                He is <regular>often described</regular> as a very <regular>analytic<regular> person, <regular>creative</regular>, <regular>logical</regular>, an “</regular>ideas monster</regular>” always focusing on the <regular>best results</regular> and <regular>enjoying</regular> the <regular>journey</regular> that it <regular>involves.</regular> 
-                His <regular>interests</regular> are around <regular>Literature</regular>, <regular>Music</regular>, <regular>Coding</regular>, <regular>Walking</regular>, and having a good <regular>cup of coffee</regular> 
-                <regular>accompanied</regular> with a <regular>good talk.</regular></p>
+                <p class="sixth-text">&lt/&gt</p>
+                <p class="sixth-paragraph"> Diego <regular>believes</regular> in a world <regular>connected</regular> by
+                    <regular>technology</regular>, but led by <regular>people.</regular>
+                    He values <regular>social connections</regular> and <regular>appreciate constructive feedback
+                    </regular>,
+                    He is <regular>often described</regular> as a very <regular>analytic<regular> person, <regular>
+                                creative</regular>, <regular>logical</regular>, an “</regular>ideas monster</regular>”
+                    always focusing on the <regular>best results</regular> and <regular>enjoying</regular> the <regular>
+                        journey</regular> that it <regular>involves.</regular>
+                    His <regular>interests</regular> are around <regular>Literature</regular>, <regular>Music</regular>,
+                    <regular>Coding</regular>, <regular>Walking</regular>, and having a good <regular>cup of coffee
+                    </regular>
+                    <regular>accompanied</regular> with a <regular>good talk.</regular>
+                </p>
             </div>
 
         </div>
-       
+
 
     </div>
 
 
 </body>
-<script  src="/js/data.js"></script>
-<script  src="/js/generateSlide.js"></script>
-<script  src="/js/Scroll.js"></script>
-<script  src="/js/getSlides.js"></script>
-<script  src="/js/modal.js"></script>
-<script  src="/js/generateCertificate.js"></script>
-<script  src="/js/getCertificate.js"></script>
+<script src="/js/data.js"></script>
+<script src="/js/generateSlide.js"></script>
+<script src="/js/Scroll.js"></script>
+<script src="/js/getSlides.js"></script>
+<script src="/js/modal.js"></script>
+<script src="/js/generateCertificate.js"></script>
+<script src="/js/getCertificate.js"></script>
 
 
 
 </html>
-
-
-
-

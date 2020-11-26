@@ -10,7 +10,6 @@
     var indexc;
     var indexm = 4;
     var Nodelist = [];
-
     function initV(){   
 
     indexa = 3;
