@@ -135,7 +135,7 @@
     transform: translate3d(0, 0, 0);
   }
   .video__presentation{
-    grid-column: 1/13;
+    grid-column: 2/12;
     grid-row: 3/5;
 }
   /*slider*/
