@@ -115,7 +115,7 @@
   }
   .wrapper{
 
-    padding-top: 3rem;
+    padding-top: 4rem;
     padding-left: 3rem;
     width: 95%;
     height: calc(var(--slide-height)+100);
@@ -136,15 +136,15 @@
 
   .slide_title{
       font-family: less-font-light;
+      text-align: center;
       font-weight: 500;
       position: absolute;
       background-color: rgba(190, 186, 124, 0.603);
       top: 85%;
-      width: 90%;
+      width: 100%;
       font-size: 1.5vw;
       padding-top: 1%;
       padding-bottom: 1%;
-      padding-left: 10%;
   }
 
 .description{
@@ -200,6 +200,7 @@
     display: flex;
     flex-direction: row;
     width: 19.6vw;
+    height: 28vw;
     position: relative;
     
 }
@@ -209,8 +210,20 @@
     object-fit: fill;
 }
 
-
-
+.slide_programmingIcon{
+    width:40px; 
+    height:40px; 
+    position:absolute; 
+    right:40px; 
+    top:-40px;
+}
+.slide_githubIcon{
+    width:40px; 
+    height:40px; 
+    position:absolute; 
+    right:0px; 
+    top:-40px;
+}
 
 
 /*<a href='https://www.freepik.com/vectors/vintage'>Vintage vector created by rawpixel.com - www.freepik.com</a>*/

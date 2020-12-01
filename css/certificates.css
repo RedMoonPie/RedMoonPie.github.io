@@ -49,8 +49,6 @@ light{
   
     
 }
-
-
 .certificate_img {
   position: relative;
     margin: 0px;
@@ -72,10 +70,23 @@ light{
     width: 70%;
     padding: 2%;
     background-color: rgba(255, 235, 205, 0.39);
-    border-radius: 19px 0px 0px 0px;
+    border-radius: 19px 0px 0px 0px;  
+}
+.certifications-title{
+  width: 100%;
+  text-align: end;
+  padding-right: 50px;
+  font-family: less-font;
+  color: rgba(0, 0, 0, 0.438);
+  font-size: 4vw;
+  margin-bottom: 80px;
 
-    
-    
+}  
+.cert-title{
+  font-family: less-font;
+  font-size: 3vw;
+  padding-left: 50px;
+  
 }
 
 /* Modal */ 
@@ -103,19 +114,4 @@ light{
   #caption{
     position: absolute;
   }
-  .certifications-title{
-    width: 100%;
-    text-align: end;
-    padding-right: 50px;
-    font-family: less-font;
-    color: rgba(0, 0, 0, 0.438);
-    font-size: 4vw;
-    margin-bottom: 80px;
 
-  }  
-  .cert-title{
-    font-family: less-font;
-    font-size: 3vw;
-    padding-left: 50px;
-    
-  }

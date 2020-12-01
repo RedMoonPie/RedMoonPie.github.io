@@ -55,6 +55,11 @@ var certifications = {
       title: "Asincronismo con JS",
       cover: "./assets/certificates/Development/diploma-asincronismo-js-1.jpg",
     },
+    {
+      id: 11,
+      title: "React Router y Redux",
+      cover: "./assets/certificates/Development/diploma-react-router-redux-1.jpg",
+    },
   ],
   management: [
     {
@@ -83,6 +88,12 @@ var certifications = {
       cover:
         "./assets/certificates/Management/diploma-tecnicas-negociacion-1.jpg",
     },
+    {
+      id: 6,
+      title: "Diseña tu modelo de negocio",
+      cover:
+        "./assets/certificates/Management/definaModelo-1.jpg",
+    },
   ],
   design: [
     {
@@ -93,14 +104,24 @@ var certifications = {
   ],
   personal: [
     {
-      id: 5,
+      id: 1,
       title: "Motivación para equipos de Trabajo",
       cover: "./assets/certificates/Personal/diploma-liderazgo-equipos-1.jpg",
     },
     {
-      id: 6,
+      id: 2,
       title: "Liderazgo para equipos de trabajo",
       cover: "./assets/certificates/Personal/diploma-motivacion-1.jpg",
+    },
+    {
+      id: 3,
+      title: "English as a Second Language",
+      cover: "./assets/certificates/Personal/Geos_Academy.jpeg",
+    },
+    {
+      id: 4,
+      title: "IELTS 2016",
+      cover: "./assets/certificates/Personal/Ielts.jpeg",
     },
   ],
 };
@@ -109,41 +130,66 @@ var projects = {
     {
       id: 1,
       title: "Dijikstra Python",
-      cover: "./assets/Projects/Python/dijikstra",
+      cover: "../assets/Projects/Python/dijikstra.png",
       gitlink: "https://github.com/RedMoonPie/djkstra_python.png",
       description:
-        "Algoritmo de la ruta mas corta, graficación de la ruta y marcado de la ruta",
+        "Shortest route algorithm, route graphing and route marking",
       type: "python",
     },
     {
       id: 2,
-      title: "Pilas-Colas-arboles Python",
-      cover: "./assets/Projects/Python/pilas-arboles",
+      title: "Stacks, Arrays, Trees",
+      cover: "../assets/Projects/Python/pilas-arboles.png",
       gitlink: "https://github.com/RedMoonPie/djkstra_python.png",
       description:
-        "Programacion de estructuras de datos para el entendimiento de los nodos y su funcionamiento conjunto",
+        "Programming of data structures for the understanding of nodes and their joint operation",
         type: "python",
     },
     {
       id: 3,
-      title: "Crud de administracion Web Asp.net",
-      cover: "./assets/Projects/c#/crudAsp.png",
+      title: "Administration CRUD Web Asp.net",
+      cover: "../assets/Projects/csh/crudAsp.png",
       gitlink: "https://github.com/RedMoonPie/djkstra_python.png",
       description:
-        "Pagina de administracion dinamica de pagina web utilizando Asp.net, en este se utilizaron conceptos relacionados al entity framework, Asp.net core, Docker y kubernetes",
+        "Dynamic web page administration using Asp.net, in this we used concepts related to the entity framework, Asp.net core, Docker and kubernetes",
         type: "c#",
     },
     {
       id: 4,
-      title: "Base de datos sqlServer en Docker",
-      cover: "./assets/Projects/c#/sqlServer.png",
+      title: "Data base sqlServer and Docker",
+      cover: "../assets/Projects/csh/sqlServer.png",
       gitlink: "https://github.com/RedMoonPie/djkstra_python.png",
       description:
-        "Conexion y enlace de base de datos sqlserver con pagina de administracion web, configuracion de base de datis en contenedor Docker",
+        "Connection and link of sqlserver database with web administration page, configuration of database in Docker container",
+        type: "c#",
+    },
+    {
+      id: 5,
+      title: "Medium c# topics",
+      cover: "../assets/Projects/csh/Mediumg_csh.png",
+      gitlink: "https://github.com/RedMoonPie/djkstra_python.png",
+      description:
+        "Different activities related to c# such as callBacks, delegates, Regular expressions, indexers, serialization etc...",
+        type: "c#",
+    },
+    {
+      id: 6,
+      title: "Advanced c# topics",
+      cover: "../assets/Projects/csh/Advanced_csh.png",
+      gitlink: "https://github.com/RedMoonPie/djkstra_python.png",
+      description:
+        "Different activities related to c# such as generic classes, interfaces, Lambda expression, generic methods, predicates etc...",
+        type: "c#",
+    },
+    {
+      id: 7,
+      title: "Design Patterns",
+      cover: "../assets/Projects/csh/Advanced_csh.png",
+      gitlink: "https://github.com/RedMoonPie/DesignPatterns.png",
+      description:
+        "Practice of different design patterns, Strategy, Observer, Factory, Abs Factory, Singleton, Decorator etc...",
         type: "c#",
     },
   
-
-
   ],
 };

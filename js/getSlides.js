@@ -5,18 +5,15 @@ const div = document.createElement('div');
 div.classList.add('description')
 div.id = "description";
 
-const GetSlides =  () => {
+const  GetSlides =  () => {
 
-    fetch(API)
-        .then (res => res.json())
-        .then (data => {
 
-            const slideInfo = data.slides.mylist;
-             slideInfo.map(slide => {
+            const slideInfo = projects.mylist;
+            slideInfo.map(slide => {
             Slide = GenerateSlide(slide);
             ul.appendChild(Slide);
-        });
-        slideInfo.map(description => {
+            });
+            slideInfo.map(description => {
             const d_div= document.createElement('div');
             d_div.classList.add('description_item');
             const p = document.createElement('p');
@@ -29,13 +26,14 @@ const GetSlides =  () => {
             d_div.appendChild(p2);
             div.appendChild(d_div);
             tp.appendChild(div);
-        })
+             })
 
 
-        })
-        .then (() => {
-            initV();
-        })
+    
+        
+        initV();
+        
+    
            
            
 }   

@@ -79,7 +79,7 @@
     grid-column-end: 13;
     grid-row-start: 2;
     grid-row-end: 4;
-    background: url(/assets/img/Home_photo_5.png);
+    background: url(/assets/img/homepp6.png);
     background-repeat: no-repeat;
     background-size: 15rem 100%;
     background-position: 50% 80%;
@@ -172,7 +172,7 @@ video{
     margin-bottom: 80px;
   }
   .wrapper {
-    padding-top: 2rem;
+    padding-top: 4rem;
     padding-left: 8rem;
     width: calc(var(--slide-width) * 2);
     height: calc(var(--slide-height)+100);
@@ -191,13 +191,28 @@ video{
     position: absolute;
     background-color: rgba(190, 186, 124, 0.603);
     top: 85%;
-    width: 90%;
-    font-size: 4vw;
+    text-align: center;
+    width: 100%;
+    font-size: 2.5vw;
     padding-top: 1%;
     padding-bottom: 1%;
-    padding-left: 10%;
-  }
 
+  }
+  .title_slide {
+    position: absolute;
+    font-family: less-font;
+    border-bottom: solid 1px;
+    bottom: 86%;
+    font-size: 3.5vw;
+    width: 80%;
+    padding-bottom: 0.3rem;
+}
+  .slide_programmingIcon{
+    width:30px; height:30px; position:absolute; right:30px; top:-30px;
+  }
+  .slide_githubIcon{
+    width:30px; height:30px; position:absolute; right:0px; top:-30px
+  }
   .description {
     grid-column-start: 1;
     grid-column-end: 13;
