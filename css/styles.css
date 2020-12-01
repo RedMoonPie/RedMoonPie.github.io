@@ -45,14 +45,15 @@ body{
    
     overflow: hidden;
   }
-
-.Main_Logo > img {
-  left :43%;
-  position: fixed;
+.Main_Logo{
   grid-column-start: 6;
   grid-column-end: 8;
   grid-row-start: 1;
   grid-row-end: 3;
+}
+.Main_Logo > img {
+
+  position: fixed;
   padding-top: 2rem;
   transition: .5s;
   z-index: 1;

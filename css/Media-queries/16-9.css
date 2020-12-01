@@ -6,15 +6,16 @@
     overflow: hidden;
   }
   .Main_Logo {
-    position: fixed;
-    transition: 0.5s;
-    z-index: 4;
-    width: 100%;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
   }
   .Main_Logo > img {
-    width: 41%;
-    margin-block-end: auto;
-    left: 35%;
+    width: 40%;
+    margin: auto;
+
   }
   .Text_Hello_1 {
     border-left: 1px solid;
@@ -29,7 +30,7 @@
   .Text_Hello {
     display: block;
     grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
   }
@@ -38,7 +39,7 @@
     padding-left: 30px;
     font-size: 1.6rem;
     grid-column-start: 2;
-    grid-column-end: 6;
+    grid-column-end: 8;
     grid-row-start: 3;
     grid-row-end: 4;
   }
@@ -75,14 +76,14 @@
   /* Photo Image*/
   .Myphoto_welcome {
     display: flex;
-    grid-column-start: 6;
+    grid-column-start: 8;
     grid-column-end: 13;
     grid-row-start: 2;
     grid-row-end: 4;
     background: url(/assets/img/homepp6.png);
     background-repeat: no-repeat;
-    background-size: 10rem 100%;
-    background-position: 45% 80%;
+    background-size: 12rem 100%;
+    background-position: 60% 80%;
     border-bottom: solid 3px black;
     border-left: solid 2px black;
     border-radius: 30px;
