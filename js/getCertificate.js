@@ -4,38 +4,29 @@ const management = document.querySelector("#management");
 const design = document.querySelector("#design");
 const personal = document.querySelector("#personal");
 async function GetCertificate (){
-  //if fetching from api
 
-  // fetch(API_certificates)
-  //     .then (res => res.json())
-  //     .then (data => {
+  for await(const certificate of certifications.development) {
+    const Certificate = GenerateCertificate(certificate);
+    development.appendChild(Certificate);
+  }
 
-  //         const certInfo = data.certifications.development;
-  //          certInfo.map(certificate => {
-  //         const Certificate = GenerateCertificate(certificate);
-  //         development.appendChild(Certificate);
-  //         });
+ for await(const certificate of certifications.management) {
+  const Certificate = GenerateCertificate(certificate);
+  management.appendChild(Certificate);
+}
 
-  //     })
+  for await(const certificate of certifications.design) {
+    const Certificate = GenerateCertificate(certificate);
+    design.appendChild(Certificate);
+  }
 
-  await certifications.development.forEach(certificate => {
-        const Certificate = GenerateCertificate(certificate)   
-        development.appendChild(Certificate);
-  })
-  await certifications.management.forEach(certificate => {
-    const Certificate = GenerateCertificate(certificate)   
-    management.appendChild(Certificate);
-  })
-  await certifications.design.forEach(certificate => {
-  const Certificate = GenerateCertificate(certificate)   
-  design.appendChild(Certificate);
-  })
-  await certifications.personal.forEach(certificate => {
-  const Certificate = GenerateCertificate(certificate)   
-  personal.appendChild(Certificate);
-  })  
+  for await(const certificate of certifications.personal) {
+    const Certificate = GenerateCertificate(certificate);
+    personal.appendChild(Certificate);
+  }
   
 
 }   
 
 GetCertificate().then(() => Ready() )
+

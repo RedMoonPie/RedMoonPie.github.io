@@ -184,11 +184,29 @@ var projects = {
     {
       id: 7,
       title: "Design Patterns",
-      cover: "../assets/Projects/csh/Advanced_csh.png",
+      cover: "../assets/Projects/csh/DesignPatterns.png",
       gitlink: "https://github.com/RedMoonPie/DesignPatterns.png",
       description:
         "Practice of different design patterns, Strategy, Observer, Factory, Abs Factory, Singleton, Decorator etc...",
         type: "c#",
+    },
+    {
+      id: 8,
+      title: "Async Practice",
+      cover: "../assets/Projects/js/Asynchronous.png",
+      gitlink: "https://github.com/RedMoonPie/DesignPatterns.png",
+      description:
+        "Understanding how callbacks work, how can we do the same with promises and the Async / Await keywords to implement asynchronous functions, API Fetching with each of those",
+        type: "js",
+    },
+    {
+      id: 9,
+      title: "Media Player",
+      cover: "../assets/Projects/js/MediaPlayer.png",
+      gitlink: "https://github.com/RedMoonPie/MediaPlayer.png",
+      description:
+        "Understanding js Scope, closures, this, call-apply-bind, prototype in js, prototype inheritence, Parsers, Event Loop, get-set, Proxys, Generator functions, how to cancel a fetch, intersection observer, Visibility Change, TypeScript, Interfaces. Design Patterns ",
+        type: "js",
     },
   
   ],

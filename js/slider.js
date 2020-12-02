@@ -133,7 +133,7 @@
             
            
             elements[indexa].classList.remove('slide2');
-            elements[indexa].removeEventListener("click", slideModal)
+           // elements[indexa].removeEventListener("click", slideModal)
             elements[indexa].style.left = (ctd*-slideSize) + "px";
             elements[indexa].style.top = 0+"px";
             //(i *ctd)  + "px"
@@ -144,7 +144,7 @@
             
             elements[indexb].style.left = (ctd*-slideSize) - 48+"px";//(i *ctd)+ "px"
             elements[indexb].classList.add('slide2');
-            elements[indexb].addEventListener("click", slideModal)
+            //elements[indexb].addEventListener("click", slideModal)
             elements[indexb].style.top = -20+"px";
             
             
@@ -181,11 +181,11 @@
             elements[indexb].style.top = 0+"px";
             elements[indexb].style.left = (cti*-slideSize)-96 + "px"
             elements[indexb].classList.remove('slide2');
-            elements[indexb].removeEventListener("click", slideModal)
+           // elements[indexb].removeEventListener("click", slideModal)
             indexb--
             
             elements[indexb].classList.add('slide2');
-            elements[indexb].addEventListener("click", slideModal)
+           // elements[indexb].addEventListener("click", slideModal)
             
             elements[indexc].style.left = (cti*-slideSize) +96 + "px"
             
@@ -217,7 +217,7 @@
                 
             }
             
-            if (indexa == 9 && indexb == 10 && indexc == 11){
+            if (indexa == elements.length-5 && indexb == elements.length-4 && indexc == elements.length-3){
                 elements.forEach(element => element.classList.remove('animation'));       
                 for (let index = 0; index < elements.length-6; index++) {
                     changeSlide(-1);

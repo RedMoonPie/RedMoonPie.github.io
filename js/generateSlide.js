@@ -12,7 +12,7 @@ const GenerateSlide = (Slide) => {
         src = "../assets/icons/csharp.png"
     }
     else if(Slide.type == "js"){
-        src = "../assets/icons/javascript.jpeg"
+        src = "../assets/icons/javascript.png"
     }
 
     slide.innerHTML = `
