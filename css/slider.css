@@ -224,6 +224,28 @@
     right:0px; 
     top:-40px;
 }
+.sliderModal {
+    display: none; 
+    position: fixed; 
+    width: 100%;
+    z-index: 2; 
+    left: 0;
+    top: 0;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.9); 
+  
+  }
+  .sliderModal__content{  
+    z-index: 1;
+    width: auto;
+    height: 87vh;
+    margin: auto;
+    padding: 3%;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
 
 
 /*<a href='https://www.freepik.com/vectors/vintage'>Vintage vector created by rawpixel.com - www.freepik.com</a>*/

@@ -237,7 +237,32 @@ video{
     z-index: 1;
     box-shadow: 10px 20px 10px 1px rgba(0, 0, 0, 0.089);
   }
+  .sliderModal {
+    display: none; 
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+    z-index: 2; 
+    left: 0;
+    top: 0;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.9); 
+  }
+  .sliderModal__content{  
+    z-index: 1;
+    width: auto;
 
+    margin: auto;
+    padding: 3%;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  
+
+  /*page 4 */
   #fourth_page {
     grid-column-start: 1;
     grid-column-end: 13;
@@ -245,8 +270,6 @@ video{
     grid-row-end: 36;
     background-image: url("/assets/img/media10.jpg");
   }
-
-  /*page 4 */
   .certificate_container {
     position: relative;
     width: 46%;
@@ -328,6 +351,8 @@ video{
   }
 
   .modal {
+    width: 100%;
+    height: 100%;
     display: none;
     position: fixed;
     z-index: 2;
