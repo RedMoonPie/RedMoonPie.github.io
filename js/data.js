@@ -131,7 +131,7 @@ var projects = {
       id: 1,
       title: "Dijikstra Python",
       cover: "../assets/Projects/Python/dijikstra.png",
-      gitlink: "https://github.com/RedMoonPie/djkstra_python.png",
+      gitlink: "https://github.com/RedMoonPie/djkstra_python",
       description:
         "Shortest route algorithm, route graphing and route marking",
       type: "python",
@@ -140,7 +140,7 @@ var projects = {
       id: 2,
       title: "Stacks, Arrays, Trees",
       cover: "../assets/Projects/Python/pilas-arboles.png",
-      gitlink: "https://github.com/RedMoonPie/djkstra_python.png",
+      gitlink: "https://github.com/RedMoonPie/stacks_arrays_trees",
       description:
         "Programming of data structures for the understanding of nodes and their joint operation",
         type: "python",
@@ -149,7 +149,7 @@ var projects = {
       id: 3,
       title: "Administration CRUD Web Asp.net",
       cover: "../assets/Projects/csh/crudAsp.png",
-      gitlink: "https://github.com/RedMoonPie/djkstra_python.png",
+      gitlink: "https://github.com/RedMoonPie/BookListRazor",
       description:
         "Dynamic web page administration using Asp.net, in this we used concepts related to the entity framework, Asp.net core, Docker and kubernetes",
         type: "c#",
@@ -158,7 +158,7 @@ var projects = {
       id: 4,
       title: "Data base sqlServer and Docker",
       cover: "../assets/Projects/csh/sqlServer.png",
-      gitlink: "https://github.com/RedMoonPie/djkstra_python.png",
+      gitlink: "https://github.com/RedMoonPie/BookListRazor",
       description:
         "Connection and link of sqlserver database with web administration page, configuration of database in Docker container",
         type: "c#",
@@ -167,7 +167,7 @@ var projects = {
       id: 5,
       title: "Medium c# topics",
       cover: "../assets/Projects/csh/Mediumg_csh.png",
-      gitlink: "https://github.com/RedMoonPie/djkstra_python.png",
+      gitlink: "https://github.com/RedMoonPie/LearningCsh",
       description:
         "Different activities related to c# such as callBacks, delegates, Regular expressions, indexers, serialization etc...",
         type: "c#",
@@ -176,7 +176,7 @@ var projects = {
       id: 6,
       title: "Advanced c# topics",
       cover: "../assets/Projects/csh/Advanced_csh.png",
-      gitlink: "https://github.com/RedMoonPie/djkstra_python.png",
+      gitlink: "https://github.com/RedMoonPie/coursecsh_adv",
       description:
         "Different activities related to c# such as generic classes, interfaces, Lambda expression, generic methods, predicates etc...",
         type: "c#",
@@ -185,7 +185,7 @@ var projects = {
       id: 7,
       title: "Design Patterns",
       cover: "../assets/Projects/csh/DesignPatterns.png",
-      gitlink: "https://github.com/RedMoonPie/DesignPatterns.png",
+      gitlink: "https://github.com/RedMoonPie/DesignPatterns_c-",
       description:
         "Practice of different design patterns, Strategy, Observer, Factory, Abs Factory, Singleton, Decorator etc...",
         type: "c#",
@@ -194,7 +194,7 @@ var projects = {
       id: 8,
       title: "Async Practice",
       cover: "../assets/Projects/js/Asynchronous.png",
-      gitlink: "https://github.com/RedMoonPie/DesignPatterns.png",
+      gitlink: "https://github.com/RedMoonPie/Async_Practice",
       description:
         "Understanding how callbacks work, how can we do the same with promises and the Async / Await keywords to implement asynchronous functions, API Fetching with each of those",
         type: "js",
@@ -203,10 +203,53 @@ var projects = {
       id: 9,
       title: "Media Player",
       cover: "../assets/Projects/js/MediaPlayer.png",
-      gitlink: "https://github.com/RedMoonPie/MediaPlayer.png",
+      gitlink: "https://github.com/RedMoonPie/MediaPlayer",
       description:
         "Understanding js Scope, closures, this, call-apply-bind, prototype in js, prototype inheritence, Parsers, Event Loop, get-set, Proxys, Generator functions, how to cancel a fetch, intersection observer, Visibility Change, TypeScript, Interfaces. Design Patterns ",
         type: "js",
+    },
+    {
+      id: 10,
+      title: "Monster Games Web Page",
+      cover: "../assets/Projects/js/MonsterGamesCart.png",
+      gitlink: "https://github.com/RedMoonPie/MyvideoGameStore",
+      description:
+        "A webpages in which I built a shopping cart using vanilla js and the local storage of the browser, apply concepts of loops, arrow functions, data loading, dynamic creation of objects, and css Styling ",
+        type: "js",
+    },
+    {
+      id: 11,
+      title: "React, React redux, React router",
+      cover: "../assets/Projects/js/React_redux.png",
+      gitlink: "#",
+      description:
+        "A webpages in which I built a shopping cart using vanilla js and the local storage of the browser, apply concepts of loops, arrow functions, data loading, dynamic creation of objects, and css Styling ",
+        type: "js",
+    },
+    {
+      id: 12,
+      title: "Simon with js",
+      cover: "../assets/Projects/js/React_redux.png",
+      gitlink: "#",
+      description: " No done yet",
+        type: "js",
+    },
+    {
+      id: 13,
+      title: "Paradox Box",
+      cover: "../assets/Projects/html_css/paradoxbox.png",
+      gitlink: "#",
+      description: " No done yet",
+        type: "html",
+    },
+    {
+      id: 14,
+      title: "Blue Versatile",
+      cover: "../assets/Projects/html_css/blue_versatile.png",
+      gitlink: "#",
+      description:
+      " No done yet",
+        type: "html",
     },
   
   ],

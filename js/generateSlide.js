@@ -14,11 +14,14 @@ const GenerateSlide = (Slide) => {
     else if(Slide.type == "js"){
         src = "../assets/icons/javascript.png"
     }
+    else if(Slide.type == "html"){
+        src = "../assets/icons/css.png"
+    }
 
     slide.innerHTML = `
         <img class="elements" src=${Slide.cover}>
         <p class="slide_title" >${Slide.title}</p>
-        <a href=""> <img src="../assets/icons/github.png" class = "slide_programmingIcon"/></a>
+        <a href="${Slide.gitlink}"> <img src="../assets/icons/github.png" class = "slide_programmingIcon"/></a>
         <img src="${src}" class = "slide_githubIcon"/> 
     `;
     return slide;

@@ -48,3 +48,9 @@ regular{
     grid-row-start: 3;
     grid-row-end: 8;
 }
+.linked{
+  grid-column-start: 9;
+  grid-column-end: 13;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
