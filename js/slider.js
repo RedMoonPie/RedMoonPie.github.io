@@ -29,7 +29,7 @@
     elements[0].addEventListener("click", left);
     elements[1].style.top = -20+"px";
     elements[1].classList.add('slide2');
-    elements[1].addEventListener("click", slideModal)
+    elements[1].children[0].addEventListener("click", slideModal)
     elements[2].classList.add('slide3');
     elements[2].addEventListener("click", right);
 
@@ -133,7 +133,7 @@
             
            
             elements[indexa].classList.remove('slide2');
-            elements[indexa].removeEventListener("click", slideModal)
+            elements[indexa].children[0].removeEventListener("click", slideModal)
             elements[indexa].style.left = (ctd*-slideSize) + "px";
             elements[indexa].style.top = 0+"px";
             //(i *ctd)  + "px"
@@ -144,7 +144,7 @@
             
             elements[indexb].style.left = (ctd*-slideSize) - 48+"px";//(i *ctd)+ "px"
             elements[indexb].classList.add('slide2');
-            elements[indexb].addEventListener("click", slideModal)
+            elements[indexb].children[0].addEventListener("click", slideModal)
             elements[indexb].style.top = -20+"px";
             
             
@@ -169,6 +169,7 @@
             elements[indexa].style.left = (cti*-slideSize) - 48+ "px"
             elements[indexa].style.top = -20+"px";
             
+            elements[1].children[0].addEventListener
             elements[indexa].removeEventListener("click", left)
             elements[indexa].classList.remove('slide1');
             
@@ -181,11 +182,13 @@
             elements[indexb].style.top = 0+"px";
             elements[indexb].style.left = (cti*-slideSize)-96 + "px"
             elements[indexb].classList.remove('slide2');
-            elements[indexb].removeEventListener("click", slideModal)
+            //elements[indexb].removeEventListener("click", slideModal)
+            elements[indexb].children[0].removeEventListener("click", slideModal)
             indexb--
             
             elements[indexb].classList.add('slide2');
-            elements[indexb].addEventListener("click", slideModal)
+            //elements[indexb].addEventListener("click", slideModal)
+            elements[indexb].children[0].addEventListener("click", slideModal)
             
             elements[indexc].style.left = (cti*-slideSize) +96 + "px"
             

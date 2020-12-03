@@ -19,8 +19,10 @@ const GenerateSlide = (Slide) => {
     }
 
     slide.innerHTML = `
+        <span class="modal__container">
         <img class="elements" src=${Slide.cover}>
         <p class="slide_title" >${Slide.title}</p>
+        </span>
         <a href="${Slide.gitlink}"> <img src="../assets/icons/github.png" class = "slide_programmingIcon"/></a>
         <img src="${src}" class = "slide_githubIcon"/> 
     `;
