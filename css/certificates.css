@@ -45,7 +45,7 @@ light{
     align-items: center;
     flex-wrap: wrap;
     display: inline-table;
-    
+    cursor: pointer;
   
     
 }
