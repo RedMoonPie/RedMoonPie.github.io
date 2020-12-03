@@ -229,7 +229,7 @@ var projects = {
     {
       id: 12,
       title: "Simon with js",
-      cover: "../assets/Projects/js/React_redux.png",
+      cover: "../assets/Projects/js/simon.png",
       gitlink: "#",
       description: " No done yet",
         type: "js",
