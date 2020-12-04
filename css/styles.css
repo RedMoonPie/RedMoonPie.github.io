@@ -46,14 +46,17 @@ body{
     overflow: hidden;
   }
 .Main_Logo{
-  grid-column-start: 6;
-  grid-column-end: 8;
+  grid-column-start: 1;
+  grid-column-end: 13;
   grid-row-start: 1;
   grid-row-end: 3;
+  
 }
 .Main_Logo > img {
 
   position: fixed;
+  left: 50%;
+  margin-left: -110px;
   padding-top: 2rem;
   transition: .5s;
   z-index: 1;
