@@ -624,7 +624,7 @@ video{
   }
   .wrapper {
     padding-top: 4rem;
-    width: fit-content);
+    width: fit-content;
     height: calc(var(--slide-height)+100);
     overflow: hidden;
     position: relative;

@@ -24,7 +24,7 @@ var certifications = {
     },
     {
       id: 5,
-      title: "Buenas practicas y entorno de Desarrollo",
+      title: "Buenas practicas y entorno de Desarrollo Mac",
       cover: "./assets/certificates/Development/diploma-prework-1.jpg",
     },
     {
@@ -59,6 +59,16 @@ var certifications = {
       id: 11,
       title: "React Router y Redux",
       cover: "./assets/certificates/Development/diploma-react-router-redux-1.jpg",
+    },
+    {
+      id: 12,
+      title: "Prework y Buenas Practicas Windows",
+      cover: "./assets/certificates/Development/diploma-prework-windows-1.jpg",
+    },
+    {
+      id: 13,
+      title: "Fundamentos NodeJs",
+      cover: "./assets/certificates/Development/diploma-fundamentos-node-1.jpg",
     },
   ],
   management: [
