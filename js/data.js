@@ -70,6 +70,11 @@ var certifications = {
       title: "Fundamentos NodeJs",
       cover: "./assets/certificates/Development/diploma-fundamentos-node-1.jpg",
     },
+    {
+      id: 14,
+      title: "Fundamentos de AWS Cloud",
+      cover: "./assets/certificates/Development/diploma-aws-cloud-1.jpg",
+    },
   ],
   management: [
     {

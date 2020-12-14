@@ -10,33 +10,33 @@
     var indexc;
     var indexm = 4;
     var Nodelist = [];
+
     function initV(){   
+        var esize = elements.length,
+        description_items = document.getElementsByClassName("description_item"),
+        dsize = items_des.length;
+        indexa = 3;
+        indexb = 4;
+        indexc = 5;
+        Nodelist = document.getElementsByClassName("ele_container");
+        elements = [...Nodelist];
+        items_des= [...description_items];
+        
+        
 
-    indexa = 3;
-    indexb = 4,
-    indexc = 5;
-    Nodelist = document.getElementsByClassName("ele_container");
-    elements = [...Nodelist];
-    var esize = elements.length;
-    var description_items = document.getElementsByClassName("description_item");
-    
-    items_des= [...description_items];
-    
-    
-    var dsize = items_des.length;
+        elements[0].classList.add('slide1');
+        elements[0].addEventListener("click", left);
+        elements[1].style.top = -20+"px";
+        elements[1].classList.add('slide2');
+        elements[1].children[0].addEventListener("click", slideModal)
+        elements[2].classList.add('slide3');
+        elements[2].addEventListener("click", right);
 
-    elements[0].classList.add('slide1');
-    elements[0].addEventListener("click", left);
-    elements[1].style.top = -20+"px";
-    elements[1].classList.add('slide2');
-    elements[1].children[0].addEventListener("click", slideModal)
-    elements[2].classList.add('slide3');
-    elements[2].addEventListener("click", right);
-
-    cloneSlides(elements[0],elements[1],elements[2],elements[esize - 3],elements[esize - 2],elements[esize - 1]);
-    clonedescp(items_des[0],items_des[1],items_des[2],items_des[dsize - 3],items_des[dsize - 2],items_des[dsize - 1])
+        cloneSlides(elements[0],elements[1],elements[2],elements[esize - 3],elements[esize - 2],elements[esize - 1]);
+        clonedescp(items_des[0],items_des[1],items_des[2],items_des[dsize - 3],items_des[dsize - 2],items_des[dsize - 1])
 
     }
+
     function clonedescp(f1,f2,f3,l1,l2,l3){
         description = document.getElementById("description");
         firstdclone = f1.cloneNode(true);
@@ -73,7 +73,6 @@
   
 
     function cloneSlides(f1,f2,f3,l1,l2,l3){
-
         //clonar 3 primeras slides 
         firstslideclone = f1.cloneNode(true);
         firstslideclone.classList.remove('slide1');
@@ -117,8 +116,6 @@
     }
 
     function changeSlide(direction)  {
-
-
         elements = [...Nodelist],
         slideSize = elements[4].offsetWidth;
 
@@ -205,10 +202,9 @@
         checkindex();
         changedesc(direction);
 
-        
     }
+
     function checkindex() { 
-       
             if (indexa == 0 && indexb == 1 && indexc == 2){
                 elements.forEach(element => element.classList.remove('animation'));       
                
@@ -230,8 +226,8 @@
 
             
      }
+
      function changedesc(direction){
-        
         indexm = indexm + direction ;
         if(indexm )
         items_des.forEach(item => {
