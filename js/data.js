@@ -116,6 +116,11 @@ var certifications = {
       title: "Design Sprint",
       cover: "./assets/certificates/Design/diploma-design-sprint-1.jpg",
     },
+    {
+      id: 2,
+      title: "Design Thinking",
+      cover: "./assets/certificates/Design/diploma-design-thinking-1.jpg",
+    },
   ],
   personal: [
     {
