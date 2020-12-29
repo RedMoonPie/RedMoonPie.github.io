@@ -72,6 +72,11 @@ var certifications = {
     },
     {
       id: 14,
+      title: "Back-End con Node Js",
+      cover: "./assets/certificates/Development/diploma-backend-nodejs_page-1.jpg",
+    },
+    {
+      id: 15,
       title: "Fundamentos de AWS Cloud",
       cover: "./assets/certificates/Development/diploma-aws-cloud-1.jpg",
     },
