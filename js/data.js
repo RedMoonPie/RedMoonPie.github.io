@@ -77,6 +77,11 @@ var certifications = {
     },
     {
       id: 15,
+      title: "Server Side Render",
+      cover: "./assets/certificates/Development/diploma-ssr-1.jpg",
+    },
+    {
+      id: 16,
       title: "Fundamentos de AWS Cloud",
       cover: "./assets/certificates/Development/diploma-aws-cloud-1.jpg",
     },
